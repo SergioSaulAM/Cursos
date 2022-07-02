@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: navy;
+}
+
+/* Ajuste de imagen y poster de videos para tener su ancho máximo y su altura que se ajuste automáticamente */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 80%;
+    height: 400px;
+}
