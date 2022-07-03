@@ -295,11 +295,32 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Títulos y Descripciones
 
+- El título se refiere al título del documento HTML (título tiene que ser referente a lo que se va a encontrar el usuario en la página que está visitando).
+
+    <p style="font-size: 18px"><b>IMPORTANTE: El título debe estar entre 55 y 65 caracteres de longitud.</b></p>
+
+- La metadescripción se defice:
+
+```HTML
+<meta name="description" content="Descripción de la página">
+```
+- ``name="description"``: Sección que va por default.
+
+- ```content="Descripción de la página"```: Descripción de la página.
+    <p style="font-size: 18px"><b>IMPORTANTE: La descripción no debe rebasar los 165 caracteres.</b></p>
+
+- Las etiquetas de título y metadescripción nos va a ayudar mucho en el posicionamiento (SEO). Con esto hacemos SEO a nivel código.
+
+- Un error muy común es dejarle el título y la metadescripción igual en todos los documentos HTML. Esto es un gran error porque si el sitio empieza a mejorar su posicionamiento, no se va a permitir el subíndice en los buscadores web (partes más visitadas de la página).
+
+
 [⬆️](#índice)
 
 ---
 
 ## Tabla Peroódica de los Elementos HTML
+
+![Tabla periodica de los Elementos HTML](img/html-cheat-sheet.jpg)
 
 [⬆️](#índice)
 
