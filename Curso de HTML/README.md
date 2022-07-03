@@ -397,6 +397,11 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Etiquetas de salto
+- **Estas etiquetas no tienen etiqueta de cierre**.
+```HTML
+<br>    Salto de línea
+<hr>    Línea horizontal (Salto semántico de contenido)
+```
 
 [⬆️](#índice)
 
