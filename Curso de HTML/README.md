@@ -322,6 +322,10 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ![Tabla periodica de los Elementos HTML](img/html-cheat-sheet.jpg)
 
+- Etiquetas HTML ordenadas según su semántica y grupo.
+
+    - Text-level semantics: Sirven para dar formato a texto.
+
 [⬆️](#índice)
 
 ---
