@@ -186,6 +186,17 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - ``<p></p>``: Etiqueta de párrafo.
 
+- El documento HTML está compuesto por dos partes:
+
+    - **_head_**
+        - Enlazar a otros archivos (CSS, JS) o enlaces, títulos, descripciones. Toda la información dentro del head es información **meta** ya que es información que habla de la página pero los usuarios no vemos. Esta información **meta** es más usada los algoritmos que posicionan las páginas en los buscadores.
+
+    - **_body_**
+        - Todo lo que queramos que se vea va dentro del body.
+
+- Es importante respetar la jerarquía de cómo han sido definidas las etiquetas. No va a arrojar error por no ser un lenguaje de programación pero al tener mal definidas las etiquetas según su jerarquía, puede que el aspecto visual este mal.
+
+- Es importante la indentación (tabulación) para ser ordenado.
 
 [⬆️](#índice)
 
@@ -193,8 +204,17 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Comentarios en HTML
 
+- Un comentario es un texto o notas que el navegador no va a interpretar. Son notas para nosotros dentro del código.
+
 ``` HTML
-<!--  -->
+<!-- Esto es un comentario -->
+
+<!-- 
+    Esto
+    es un
+    comentario
+ -->
+
 ```
 
 [⬆️](#índice)
