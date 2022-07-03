@@ -1,6 +1,7 @@
 # Curso de HTML
 
 ## Índice
+
 1. [Documentación](#documentación)
 1. [Introducción](#introducción)
 1. [Software necesario](#software-necesario)
@@ -60,6 +61,7 @@
 ---
 
 ## Introducción
+
 HTML es el lenguaje de marcado que nos define el contenido que vemos a través de los navegadores.
 
 [⬆️](#índice)
@@ -67,22 +69,23 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Software necesario
+
 - Navegador Web
-    - Recomendados
-        - Chrome
-        - FireFox
-    - No Recomendados
-        - Internet Explorer
+
+  - Recomendados
+    - Chrome
+    - FireFox
+  - No Recomendados
+    - Internet Explorer
 
 - Editor de código: Es una herramienta que nos permite escribir código
-    - Recomendaciones
-        - Sublime Text
-        - Atom (GitHub)
-        - Brackets (Adobe)
-        - _**Visual Studio Code**_ (Microsoft)
+  - Recomendaciones
+    - Sublime Text
+    - Atom (GitHub)
+    - Brackets (Adobe)
+    - _**Visual Studio Code**_ (Microsoft)
 
 [⬆️](#índice)
-
 
 ---
 
@@ -92,10 +95,8 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Se suele llamar _index_ al archivo principal de HTML por convención en el desarrollo web.
 
-- Para nombrar archivos: 
-    - _nombre_archivo.extensión_
-        - v.gr.: **index.html**
-<br><br>
+- Para nombrar archivos: - _nombre_archivo.extensión_ - v.gr.: **index.html**
+  <br><br>
 - Para ver el contenido del archivo HTML, se tiene que ir a la carpeta que contiene el archivo HTML y dar doble clic (En el Explorador de Archivos).
 
 [⬆️](#índice)
@@ -126,20 +127,21 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Estas tecnologías están regidas por personas y deliminan los avances que los navegadores tienen que aceptar.
 
-    - W3G y WhatWG son grupos de personas que rigen los estándares.
-<br>
-<br>
+      - W3G y WhatWG son grupos de personas que rigen los estándares.
+
+  <br>
+  <br>
 
 - Para leer la **documentación** de HTML se usa:
 
-    - ### [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/)
+  - ### [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/)
 
-        - Quienes sus desarrolladores son los mismos del navegador Firefox (Documentación NO oficial).
+    - Quienes sus desarrolladores son los mismos del navegador Firefox (Documentación NO oficial).
 
-    - ### [htmlreference](https://htmlreference.io/)
-        - Página que contiene referencias de HTML.
+  - ### [htmlreference](https://htmlreference.io/)
+    - Página que contiene referencias de HTML.
 
-- 
+-
 
 [⬆️](#índice)
 
@@ -148,7 +150,8 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ## Estructura básica de un documento HTML
 
 ### Estructura
-``` HTML
+
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,10 +161,11 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
     <title>Document</title>
 </head>
 <body>
-    
+
 </body>
 </html>
 ```
+
 - **HTML (Hyper Text Markup Language)**
 
 - **Hyper**: Del griego que significa _"Navegación"_.
@@ -174,25 +178,26 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Hay etiquetas que tienen etiquetas de cierre (abre y cierra en diferente línea de código) y hay otras etiquetas que por su naturaleza cierran en la misma línea.
 
-    | Etiqueta de apertura y cierre | Etiqueta de cierre |
-    | :---: | :---: |
-    | ```<head></head>``` | ``` <meta> ``` |
+  | Etiqueta de apertura y cierre | Etiqueta de cierre |
+  | :---------------------------: | :----------------: |
+  |        `<head></head>`        |      `<meta>`      |
 
 - Las etiquetas HTML pueden tener **atributos**.
 
-- Para generar la [estructura básica de HTML](#estructura) (Requiere Emmet): ``! + tab``
+- Para generar la [estructura básica de HTML](#estructura) (Requiere Emmet): `! + tab`
 
 - Las etiquetas se escriben en minúsculas (como buena práctica, ya que HTML no distingue entre mayúsculas y minúsculas). _Salvo la etiqueta Doctype_.
 
-- ``<p></p>``: Etiqueta de párrafo.
+- `<p></p>`: Etiqueta de párrafo.
 
 - El documento HTML está compuesto por dos partes:
 
-    - **_head_**
-        - Enlazar a otros archivos (CSS, JS) o enlaces, títulos, descripciones. Toda la información dentro del head es información **meta** ya que es información que habla de la página pero los usuarios no vemos. Esta información **meta** es más usada los algoritmos que posicionan las páginas en los buscadores.
+  - **_head_**
 
-    - **_body_**
-        - Todo lo que queramos que se vea va dentro del body.
+    - Enlazar a otros archivos (CSS, JS) o enlaces, títulos, descripciones. Toda la información dentro del head es información **meta** ya que es información que habla de la página pero los usuarios no vemos. Esta información **meta** es más usada los algoritmos que posicionan las páginas en los buscadores.
+
+  - **_body_**
+    - Todo lo que queramos que se vea va dentro del body.
 
 - Es importante respetar la jerarquía de cómo han sido definidas las etiquetas. No va a arrojar error por no ser un lenguaje de programación pero al tener mal definidas las etiquetas según su jerarquía, puede que el aspecto visual este mal.
 
@@ -206,10 +211,10 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Un comentario es un texto o notas que el navegador no va a interpretar. Son notas para nosotros dentro del código.
 
-``` HTML
+```HTML
 <!-- Esto es un comentario -->
 
-<!-- 
+<!--
     Esto
     es un
     comentario
@@ -223,7 +228,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiqueta HTML y el atributo _lang_
 
-- La etiqueta ``<html>`` es la que se encarga de tener la cabeza como el cuerpo del documento.
+- La etiqueta `<html>` es la que se encarga de tener la cabeza como el cuerpo del documento.
 
 - Desde HTML5 (2009) la W3C hizo marketing para HTML. (En estas épocas se hacían las páginas web con Flash).
 
@@ -231,13 +236,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - El atributo _lang_ especifica el idioma de la página (idioma del contenido). No es tan necesario especificar el idioma del contenido hasta cierto punto.
 
-    - **_en_**: Inglés
-    - **_jp_**: Japonés
-    - **_es_**: Español
-    - **_es-DOMINIO PAIS_**: Español local. Es recomendable para casos y contextos muy particulares. (El dominio del país va en MAYÚSCULAS).
-        - es-MX: Español mexicano
-        - es-CL: Español chileno.
-    - **_es-419_**: Español latino y región del Caribe.
+  - **_en_**: Inglés
+  - **_jp_**: Japonés
+  - **_es_**: Español
+  - **_es-DOMINIO PAIS_**: Español local. Es recomendable para casos y contextos muy particulares. (El dominio del país va en MAYÚSCULAS).
+    - es-MX: Español mexicano
+    - es-CL: Español chileno.
+  - **_es-419_**: Español latino y región del Caribe.
 
 [⬆️](#índice)
 
@@ -265,9 +270,10 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Si no se especifica el tipo de charset, los navegadores viejos no van a reconocer algunos caracteres como la ñ.
 
-``` HTML
+```HTML
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
+
 - Se refiere a ajustar la configuración de Microsoft Edge a Internet Explorer.
 - Esta etiqueta se puede borrar ya que no es un estándar.
 
@@ -282,12 +288,12 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ```HTML
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
+
 - **Por cuestiones de resposive design, es muy importante y hay que incluirla en todos los documentos HTML.**
 
-- ``width=device-width``: El ancho del documento HTML se va a adaptar al ancho del dispositivo.
+- `width=device-width`: El ancho del documento HTML se va a adaptar al ancho del dispositivo.
 
-- ``initial-scale=1.0``: La escala inicial del contenido va a iniciar en 1 (100%).
-
+- `initial-scale=1.0`: La escala inicial del contenido va a iniciar en 1 (100%).
 
 [⬆️](#índice)
 
@@ -304,15 +310,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ```HTML
 <meta name="description" content="Descripción de la página">
 ```
-- ``name="description"``: Sección que va por default.
 
-- ```content="Descripción de la página"```: Descripción de la página.
+- `name="description"`: Sección que va por default.
+
+- `content="Descripción de la página"`: Descripción de la página.
     <p style="font-size: 18px"><b>IMPORTANTE: La descripción no debe rebasar los 165 caracteres.</b></p>
 
 - Las etiquetas de título y metadescripción nos va a ayudar mucho en el posicionamiento (SEO). Con esto hacemos SEO a nivel código.
 
 - Un error muy común es dejarle el título y la metadescripción igual en todos los documentos HTML. Esto es un gran error porque si el sitio empieza a mejorar su posicionamiento, no se va a permitir el subíndice en los buscadores web (partes más visitadas de la página).
-
 
 [⬆️](#índice)
 
@@ -324,13 +330,34 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Etiquetas HTML ordenadas según su semántica y grupo.
 
-    - Text-level semantics: Sirven para dar formato a texto.
+  - Text-level semantics: Sirven para dar formato a texto.
 
 [⬆️](#índice)
 
 ---
 
 ## Encabezados
+
+- _**Nos van a permitir titularizar nuestro contenido**_.
+
+- Los niveles generar una jerarquía semántica de contenido y cada nivel tiene diferentes formatos.
+
+- Los encabezados también se toman en cuenta para el SEO.
+
+    <p style="font-size: 18px"><b>IMPORTANTE: SÓLO SE AGREGA UN SOLO h1</b></p>
+
+  - Esto debido a que los Growlers (también conocidas como Arañas. Algoritmos que buscan la info en los documentos HTML) seimpre se fijan en el h1 para el SEO.
+
+  - Después del h1 único, se puede agregar tantos headings como se guste (según las necesidades).
+
+  ```HTML
+    <h1>Encabezado de nivel 1</h1>
+    <h2>Encabezado de nivel 2</h2>
+    <h3>Encabezado de nivel 3</h3>
+    <h4>Encabezado de nivel 4</h4>
+    <h5>Encabezado de nivel 5</h5>
+    <h6>Encabezado de nivel 6</h6>
+  ```
 
 [⬆️](#índice)
 
@@ -359,6 +386,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 [⬆️](#índice)
 
 ---
+
 ## Etiquetas semánticas estructurales
 
 [⬆️](#índice)
