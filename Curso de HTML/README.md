@@ -259,6 +259,18 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Atributo _charset_
 
+- _charset_ hace referencia al juego de caracteres con la que está codifcada una página (relacionado con el idioma).
+
+- UTF-8 es el juego de caracteres estándar.
+
+- Si no se especifica el tipo de charset, los navegadores viejos no van a reconocer algunos caracteres como la ñ.
+
+``` HTML
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
+- Se refiere a ajustar la configuración de Microsoft Edge a Internet Explorer.
+- Esta etiqueta se puede borrar ya que no es un estándar.
+
 [⬆️](#índice)
 
 ---
