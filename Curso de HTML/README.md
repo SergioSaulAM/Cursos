@@ -365,6 +365,17 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiquetas básicas de texto
 
+```HTML
+<p></p>             Nos permite tener un párrafo.
+<b></b>             Negrita (Bold)
+<i></i>             Cursiva (Italic)
+<u></u>             Subrayado (se sugiere CSS para subrayado)
+<sup></sup>         Superíndice
+<sub></sub>         Subíndice
+<mark></mark>       Marcatextos
+<small></small>     Letras pequeñas
+```
+
 [⬆️](#índice)
 
 ---
