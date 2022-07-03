@@ -382,6 +382,16 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiquetas de texto semánticas
 
+- Etiquetas semánticas: Referencia visual y con significado.
+
+```HTML
+<strong></strong>               Dar mayor importancia
+<em></em>                       Hacer énfasis
+<blockquote></blockquote>       Citar o hacer referencia (frase con indentación)
+<cite></cite>                   Citar (autor)
+<time></time>                   Define la hora en formato 24 hrs.
+```
+
 [⬆️](#índice)
 
 ---
