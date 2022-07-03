@@ -1,12 +1,23 @@
 <!-- 
   HTML es el lenguaje de marcado que nos define el contenido que vemos a través de los navegadores.
  -->
+
+ <!-- 👇 !DOCTYPE html indica el tipo de versión del documento HTML (v. 5) 👇 -->
 <!DOCTYPE html>
+<!-- 👇 lang es el atributo que define el idioma del contenido de la página 👇 -->
 <html lang="es">
 
+<!-- 
+👇  head: Contiene toda la información meta de la página (información que habla de la página pero que los usuarios no ven). 👇
+ -->
 <head>
+  <!-- 👇 charset define el juego de caracteres con la que está codificada una página. UTF-8 es el estándar 👇 -->
   <meta charset="UTF-8">
+
+  <!-- 👇 Hace referencia al ajuste de la configuración de Microsoft Edge para Internet Explorer 👇 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- 👇 Es la etiqueta que dice a los dispositibos cómo se va a adaptar el contenido. MUY IMPORTANTE PARA RESPONSIVE DESIGN 👇 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
   <!-- TITULO: 👇 (55 y 65 caracteres) 👇 -->
@@ -39,6 +50,8 @@
 
   <!-- 👇 ENLAZAR A ARCHIVO CSS 👇 -->
   <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- 👇 Etiqueta CSS dentro del documento HTML 👇 -->
   <style>
     h2 {
       color: orangered;
@@ -55,6 +68,9 @@
   - https://www.w3.org/blog/news/archives...
   - https://developer.mozilla.org/es/docs... -->
 
+  <!-- 
+    Si no ponemos texto sin la etiqueta <p></p>, entonces los saltos de línea no se toman en cuenta.
+   -->
   <p>Hola, escribiendo mi primer documento HTML</p>
   <p>Aprendiendo sobre Diseño Web</p>
   <h3>Temario del curso</h3>
@@ -91,6 +107,7 @@
   <hr>
 
   <h2 id="encabezados">Encabezados HTML</h2>
+  <!-- Más de 6 niveles de encabezados no existen. -->
   <h1>Encabezado de nivel 1 - sólo puede existir un h1 por documento HTML</h1>
   <h2>Encabezado de nivel 2</h2>
   <h3>Encabezado de nivel 3</h3>
