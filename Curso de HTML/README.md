@@ -223,6 +223,22 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiqueta HTML y el atributo _lang_
 
+- La etiqueta ``<html>`` es la que se encarga de tener la cabeza como el cuerpo del documento.
+
+- Desde HTML5 (2009) la W3C hizo marketing para HTML. (En estas épocas se hacían las páginas web con Flash).
+
+- Por cuestiones de posicionamiento es muy importante especificar el atributo del idioma en la etiqueta HTML.
+
+- El atributo _lang_ especifica el idioma de la página (idioma del contenido). No es tan necesario especificar el idioma del contenido hasta cierto punto.
+
+    - **_en_**: Inglés
+    - **_jp_**: Japonés
+    - **_es_**: Español
+    - **_es-DOMINIO PAIS_**: Español local. Es recomendable para casos y contextos muy particulares. (El dominio del país va en MAYÚSCULAS).
+        - es-MX: Español mexicano
+        - es-CL: Español chileno.
+    - **_es-419_**: Español latino y región del Caribe.
+
 [⬆️](#índice)
 
 ---
