@@ -277,6 +277,18 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Metaetiqueta _Viewport_
 
+- La etiqueta del _viewport_ hace referencia a la zona visible del navegador donde se renderiza el contenido de HTML. Es importante la etiqueta que sea definida en todos los documentos HTML porque es la que le dice a los dispositivos cómo se va a adaptar el contenido.
+
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+- **Por cuestiones de resposive design, es muy importante y hay que incluirla en todos los documentos HTML.**
+
+- ``width=device-width``: El ancho del documento HTML se va a adaptar al ancho del dispositivo.
+
+- ``initial-scale=1.0``: La escala inicial del contenido va a iniciar en 1 (100%).
+
+
 [⬆️](#índice)
 
 ---
