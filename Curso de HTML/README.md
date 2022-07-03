@@ -245,6 +245,14 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiqueta _DOCTYPE_
 
+- Antes del HTML5, hubo HTML1, HTML2, HTML3, XHTML (fusión entre HTML y XML), HTML4 y en cada una de esas versiones había diferentes tipos de documentos y el DOCTYPE se volvía muy largo ya que se tenía que insertar una URL que especificaba la versión de HTML que se estaba usando en ese documento.
+
+- Dependiendo del tipo de documento (tipo de DOCTYPE) algunas etiquetas eran soportadas y otras no o la visualización de las etiquetas era diferente.
+
+- Por estas situaciones y dificultades, la W3C estandarizó los tipos de documentos y aceptó todas las etiquetas (todo en un solo tipo de versión y documento).
+
+- El DOCTYPE especifica un tipo de documento con la versión **5**.
+
 [⬆️](#índice)
 
 ---
