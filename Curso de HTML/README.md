@@ -409,6 +409,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiquetas de formateo
 
+```HTML
+<pre></pre>     Preformateo (deja el formato dado y cambia el tipo de tipografía)
+<code></code>   Formato de código
+```
+
+- Si hay un bloque que queremos mostrar en una página pero no sale debido a que es una etiqueta y que el navegador la interpreta como tal, debemos cambiar los picoparéntesis por **\&lt;** (<) y **\&gt;** (>).
+
 [⬆️](#índice)
 
 ---
