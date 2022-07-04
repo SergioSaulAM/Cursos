@@ -344,7 +344,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Los encabezados también se toman en cuenta para el SEO.
 
-    <p style="font-size: 18px"><b>IMPORTANTE: SÓLO SE AGREGA UN SOLO h1</b></p>
+    <p style="font-size: 18px"><b>IMPORTANTE: SÓLO SE AGREGA UN SOLO &lt;h1&gt;</b></p>
 
   - Esto debido a que los Growlers (también conocidas como Arañas. Algoritmos que buscan la info en los documentos HTML) seimpre se fijan en el h1 para el SEO.
 
@@ -421,6 +421,37 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Etiquetas semánticas estructurales
+
+- Maquetación: Proceso de delimitar el área de las diferentes secciones del sitio web.
+
+- El proceso de maquetación va a depender de cómo esté organizado el diseño o UI de los sitios web.
+
+- Cuando llegó HTML5, se crearon esas etiquetas semánticas porque antes se usaba ``<div></div>`` para dividir las zonas de contenido el cual es una etiqueta contenedora _sin semántica_.
+
+- Está mal creer que solamente deba haber un pie de página o una sola cabecera.
+
+```HTML
+<header></header>       Representa la cabecera de un sitio o estructura.
+<main></main>           Define la sección principal del documento.
+<footer></footer>       Pie de página de un sitio web o de una sección del sitio.
+<nav></nav>             Representa una navegación.
+<article></article>     Representa una sección de autocontenido.
+<aside></aside>         Representa un contenido complementario o secundario.
+<section></section>     Representa una sección de contenido genérico.
+<address></address>     Representa cualquier tipo de información de contacto.
+```
+- **Notas importantes**:
+
+  - <p style="font-size: 18px"><b>IMPORTANTE: SÓLO SE AGREGA UN SOLA SOLA ETIQUETA &lt;main&gt;.</b></p>
+
+  - La navegación consiste en un conjunto de enlaces que formen un menú de navegación.
+
+  - Un ``<article></article>`` es una sección de autocontenido que por sí sola se entiende su contenido sin necesidad del contexto de la interfaz del sitio.
+
+  - La etiqueta ``<aside></aside>`` nos sirve para agregar publicidad.
+
+- La semántica ba a ser muy subjetivo con base a l tipo de contenido del sitio web (se puede meter un ``<section></section>`` dentro de un ``<article></article>`` o viceversa).
+
 
 [⬆️](#índice)
 
