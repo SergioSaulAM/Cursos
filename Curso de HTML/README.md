@@ -1076,6 +1076,47 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Atributos de Inputs y Formularios
 
+### Tabla de atributos para formulario
+
+|   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     | Para |
+| :----------: | :-------------------------------------------: | :--------: | :------------: | :---: |
+| ``type=""`` | Para indicar el tipo de input que se va a mostrar  |     ❌     |       text, checkbox, radio, date, color, button, submit, reset, file, hidden, email, number, tel, password, search        | ``<input>`` |
+| ``name=""`` | Para darle un nombre a los elementos de formulario  |     ❌     |       {nombre del input}        | ``<input>``, ``<select>``, ``<textarea>`` |
+| ``value=""`` | Para darle un valor inicial al input  |     ❌     |       {valor inicial}        | ``<input>``, ``<option>``, ``<textarea>`` |
+| ``id=""`` | Para darle un identificador único  |     ❌     |       {nombre del id}        | ``<input>``, ``<option>``, ``<textarea>``, ``<select>``, ``<button>`` |
+| ``cols=""`` | Para indicar el numero de caracteres en columna  |     ❌     |       #        | ``<textarea>`` |
+| ``rows=""`` | Para indicar el numero de caracteres en fila  |     ❌     |       #        | ``<textarea>`` |
+| ``placeholder=""`` | Para mostrar un texto guía en el input  |     ❌     |       {texto para ser guía}        | ``<input>``, ``<textarea>`` |
+| ``action=""`` | Para indicar la ruta del servido a donde mandar la información  |     ❌     |       {URL}        | ``<form>`` |
+| ``method=""`` | Para indicar tipo de paso de valores al servidor  |     ❌     |       GET, POST        | ``<form>`` |
+| ``pattern=""`` | Para indicar los valores requeridos en el input  |     ❌     |       {caracteres requeridos}        | ``<input>`` |
+| ``title=""`` | Para indicar el mensaje de validación  |     ❌     |       {texto mensaje}        | ``<input>``, ``<textarea>`` |
+| ``for=""`` | Para indicar hacia qué input con cierto ID la etiqueta ``<label>`` va dirigido  |     ❌     |      {ID del elemento}      | ``<label>`` |
+| ``autocomplete=""`` | Para indicar si las sugerencias de autocompletado serán activadas o desactivadas  |     ❌     |       on, off        | ``<input>``, ``<form>`` |
+| ``multiple`` | Para seleccionar más de un archivo  |     ✅     |       -        | ``<input type="file">`` |
+| ``disable`` | Para invalidar el uso de un input  |     ✅     |       -        | ``<input>`` |
+| ``readonly`` | Para hacer que un input solamente se pueda leer (no ser modificado)  |     ✅     |       -        | ``<input>`` |
+| ``required`` | Para validar que un input sea requerido antes de mandar la info al servidor  |     ✅     |       -        | ``<input>`` |
+| ``selected`` | Para seleccionar un radio botón desde un inicio  |     ✅     |       -        | ``<input type="checkbox">`` |
+| ``checked`` | Para seleccionar un checkbox desde un inicio |     ✅     |       -        | ``<input type="radio">`` |
+
+- **Los atributos booleanos VAN AL FINAL**.
+  
+- <p  style="font-size: 18px">La etiqueta <b>&lt;form&gt;&lt;/form&gt;</b> es una etiqueta donde va a contener todos los elementos de formulario para ser procesado y enviado a un servidor.</p>
+
+- Si agregamos el atributo _**readonly**_, el input no podrá ser modificado.
+
+- Dos métodos de envíos de información de un formulario:
+  - **method=""**:
+    - **GET**: Enviar por URL los valores.
+    - **METHOD**: Enviar las cabeceras del documento (forma oculta).
+
+- Cuando hay un **?** en la URL, quiere decir que se van a pasar variables por el método *__GET__*. El **&** separa las variables en el URL.
+
+- A nivel de accesibilidad, los ``<label>`` son importantes.
+
+- Sin el ``action=""``, el formulario se autoprocesa (se recarga la página).
+
 [⬆️](#índice)
 
 ---
