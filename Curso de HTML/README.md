@@ -894,18 +894,70 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
     - Para las ventanas modales, lo recomendable es usar HTML y CSS.
     - Las ventanas modales es una etiqueta experimental.
 
-  ### Ejemplo de Dialog
-    ```HTML
-    <dialog open>
-        Esto es una ventana modal en HTML
-    </dialog>
-    ```
+    ### Ejemplo de Dialog
+      ```HTML
+      <dialog open>
+          Esto es una ventana modal en HTML
+      </dialog>
+      ```
 
 [⬆️](#índice)
 
 ---
 
 ## Audio y Video
+
+- Por cada tipo de archivo, se realiza una carpeta.
+
+- Las etiquetas de audio y video son **etiquetas de línea**.
+
+- <p style="font-size: 22px">Audio:</p>
+  
+  |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+  | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``controls`` | Para visualizar los controles de audio  |     ✅     |       -        |
+  | ``autoplay`` | Para reproducir automáticamente el audio  |     ✅     |       -        |
+  | ``loop`` | Para repetir el audio de forma automática  |     ✅     |       -        |
+  | ``muted`` | Para silenciar el audio  |     ✅     |       -        |
+  | ``preload`` | Para precargar el audio en el caché del navegador  |     ✅     |       -        |
+
+
+  - Al poner el audio ya con la ruta del archivo, no se visualizará nada.
+
+  - Para visualizar un reproductor de audio, se coloca el atributo booleano **_controls_**.
+
+  - El atributo _**autoplay**_ no funciona con navegadores móviles. Además, requiere del permiso del usuario en el navegador para poder funcionar.
+  
+  - Es recomendable usar siempre el atributo **_preload_**.
+
+  ### Ejemplo de Audio
+
+  ```HTML
+  <audio src="audio/Alvaro López & Resqband - Jericó (Performance Video).mp3" controls preload></audio>
+  ```
+
+- <p style="font-size: 22px">Audio:</p>
+  
+  |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+  | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``controls`` | Para visualizar los controles de audio  |     ✅     |       -        |
+  | ``autoplay`` | Para reproducir automáticamente el audio  |     ✅     |       -        |
+  | ``loop`` | Para repetir el audio de forma automática  |     ✅     |       -        |
+  | ``muted`` | Para silenciar el audio  |     ✅     |       -        |
+  | ``preload`` | Para precargar el audio en el caché del navegador  |     ✅     |       -        |
+  | ``poster=""`` | Para colocar poster en video si no se reproduce  |     ❌     |       {ruta de imagen}        |
+
+  - El atributo _**autoplay**_ no funciona con navegadores móviles. Además, requiere del permiso del usuario en el navegador para poder funcionar.
+  
+  - Es recomendable usar siempre el atributo **_preload_**.
+
+  - Para el atributo _**poster=""**_ es recomendable usar una imagen de igual resolución del video.
+
+  ### Ejemplo de Video
+
+  ```HTML
+  <video src="video/Dirty Loops & Cory Wong - Follow The Light.mp4" poster="img/Batman SVG.svg" controls autoplay preload></video>
+  ```
 
 [⬆️](#índice)
 
