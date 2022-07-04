@@ -541,6 +541,14 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Vectores
 
+- Los vectores es código HTML.
+
+- Se puede pegar el código SVG en el archivo HTML.
+
+- Se puede visualizar la imagen SVG en HTML con la etiqueta ``<img>``.
+
+- Si el código es muy grande, lo más recomendable es tratarlo como imagen y no como SVG usando el código.
+
 [⬆️](#índice)
 
 ---
