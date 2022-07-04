@@ -513,13 +513,27 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
   - Mediante un archivo independiente. Para enlazar el archivo JS se usa:
     - ``<script src="{ubicación archivo JS}"></script>``
 
-  - _**La forma correcta de aplicar JS es mediante un archivo externo a través de la etiqueta &lt;script&gt;**_.
+- _**La forma correcta de aplicar JS es mediante un archivo externo a través de la etiqueta &lt;script&gt;**_.
 
 [⬆️](#índice)
 
 ---
 
 ## Imágenes
+
+- Etiqueta para agregar una imagen:
+  
+  - ``<img src="{ruta de imagen}" alt="{texto alternativo}">``
+
+- **El texto alternativo es para cargar por si la imagen está rota o no se puede cargar por algún motivo**.
+
+- Es importante colocar un texto alternativo para que los screen readers usen dicho texto y ayudar a las personas con alguna discapacidad.
+
+- Formatos soportados: JPG, PNG, GIF, SVG, etc.
+
+- Las imágenes tienen el atributo ``width=""`` y ``height=""`` (ancho y alto). **Lo ideal para definir el alto y ancho de las imágenes, se usa CSS**.
+
+- Ahora es popular utilizar el formato de vectores como imágenes (como logotipos).
 
 [⬆️](#índice)
 
