@@ -646,6 +646,102 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Tablas
 
+- Etiqueta: ``<table></table>``.
+
+- Primero definir la fila con ``<tr></tr>`` (Table Row).
+
+- Después de definir las filas, definir las columnas ``<td></td>`` (Table Data).
+  - **Se define dentro de ``<tr></tr>``**.
+
+- Para crear grupos de filas o darle una estructura semántica usar: 
+  - ``<thead></thead>``: Table Header
+  - ``<tbody></tbody>``: Table Body
+  - ``<tfoot></tfoot>``: Table Foot
+
+- Para colocar un header a la tabla, se usa ``<th></th>`` (Table Head).
+
+|   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+  | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``colspan=""``  | Unir celdas por columnas  |     ❌     |       #        |
+  | ``rowspan=""``  | Unir celdas por filas     |     ❌     |       #        |
+
+
+### Ejemplo Tabla Simple
+
+```HTML
+<table>
+    <tr>
+      <td>Nombre</td>
+      <td>Constelación</td>
+      <td>Tipo</td>
+    </tr>
+    <tr>
+      <td>Ikki</td>
+      <td>Fénix</td>
+      <td>Bronce</td>
+    </tr>
+    <tr>
+      <td>Shaira</td>
+      <td>Ofiuco</td>
+      <td>Plata</td>
+    </tr>
+    <tr>
+      <td>Saga</td>
+      <td>Géminis</td>
+      <td>Dorado</td>
+    </tr>
+  </table>
+```
+
+### Ejemplo Tabla Estructurada
+
+```HTML
+<table>
+    <thead>
+      <tr>
+        <th colspan="3">Tabla de los Santos de Athena</th>
+      </tr>
+      <tr>
+        <th>Nombre</th>
+        <th>Constelación</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- <td rowspan="2">Ikki</td> -->
+        <td>Ikki</td>
+        <td>Fénix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Misty</td>
+        <td>Lagarto</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Géminis</td>
+        <td>Dorado</td>
+      </tr>
+      <tr>
+        <td>Shaira</td>
+        <td rowspan="2">Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Odiseo</td>
+        <td>Dorada</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3"><small>Saint Seiya fue creado por Masami Kurumada</small></th>
+      </tr>
+    </tfoot>
+  </table>
+```
+
 [⬆️](#índice)
 
 ---
