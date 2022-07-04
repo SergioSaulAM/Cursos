@@ -1005,6 +1005,71 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Elementos de Formularios
 
+- Para el envío y validaciones, se usa JS.
+
+- <p style="font-size: 22px">Input:</p>
+  
+  - Etiqueta: ``<input type="" name="" value="">``
+  - Elemento más básico.
+
+    |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+    | :----------: | :-------------------------------------------: | :--------: | :------------: |
+    | ``type=""`` | Para indicar el tipo de input que se va a mostrar  |     ❌     |       text, checkbox, radio, date, color, button, submit, reset, file, hidden, email, number, tel, password, search        |
+    | ``name=""`` | Para darle un nombre al input  |     ❌     |       {nombre del input}        |
+    | ``value=""`` | Para darle un valor inicial al input  |     ❌     |       {valor inicial}        |
+    | ``id=""`` | Para darle un identificador único  |     ❌     |       {nombre del id}        |
+    | ``multiple`` | Para seleccionar más de un archivo  |     ✅     |       -        |
+
+  - **Submit** quiere decir _procesar_. Envía los datos del formulario.
+  - Para dar texto a los botones, se usa el atributo ``value=""``.
+  - Para seleccionar más de un atributo con el ``<input type="file">``, se usa el atributo ``multiple``.
+  - El ``<input type="hidden">`` sirve para que cuando se envie el formulario, se pueda mandar algún valor.
+  - **Para que la información sea recibida por el servidor como variables, se usa el atributo ``name=""`` (nombre de la variable).**
+
+
+  ### Ejemplo de Input
+  ```HTML
+  <input type="text" name="user" value="" id="">
+  ```
+
+- <p style="font-size: 22px">Textarea:</p>
+
+  - Etiqueta: ``<textarea cols="" rows=""></textarea>``
+
+    |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+    | :----------: | :-------------------------------------------: | :--------: | :------------: |
+    | ``cols=""`` | Para indicar el numero de caracteres en columna  |     ❌     |       #        |
+    | ``rows=""`` | Para indicar el numero de caracteres en fila  |     ❌     |       #        |
+  
+  ### Ejemplo de Textarea
+
+  ```HTML
+  <textarea cols="50" rows="5"></textarea>
+  ```
+
+- <p style="font-size: 22px">Select:</p>
+
+  - Etiqueta: ``<select></select>``
+
+    - Dentro de la etiqueta, se usa: ``<option></option>`` para dar opciones.
+
+  |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+    | :----------: | :-------------------------------------------: | :--------: | :------------: |
+    | ``name=""`` | Para darle un nombre al input  |     ❌     |       {nombre del input}        |
+    | ``value=""`` | Para darle un valor inicial al input  |     ❌     |       {valor inicial}        |
+    | ``id=""`` | Para darle un identificador único  |     ❌     | {nombre del id} |
+  ### Ejemplo de Select
+
+  ```HTML
+  <select name="" id="">
+    <option value="">HTML</option>
+    <option value="">CSS</option>
+    <option value="">JS</option>
+    <option value="">PHP</option>
+    <option value="">Python</option>
+  </select>
+  ```
+
 [⬆️](#índice)
 
 ---
