@@ -585,7 +585,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
   | :----------: | :-------------------------------------------: | :--------: | :------------: |
   | ``start=""`` | Para empezar la lista en un número diferente  |     ❌     |       #        |
   | ``reversed`` | Para empezar la lista en orden inverso        |     ✅     |       -        |
-  | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | 1, i, I, a, A |
+  | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | **1, i, I, a, A** |
 
 ### Ejemplo
 ```HTML
@@ -597,13 +597,27 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ```
 - Los atributos van dentro de la etiqueta ``<ol>``.
 
-- El valor 1 es el predeterminado.
+- El valor **1** es el predeterminado.
 
 [⬆️](#índice)
 
 ---
 
 ## Listas Desordenadas
+
+- Listas con viñetas.
+
+- Etiqueta: ``<ul></ul>``
+
+  - Los elementos se colocan con la etiqueta: ``<li></li>`` dentro de ``<ul></ul>``.
+
+    |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+    | :----------: | :-------------------------------------------: | :--------: | :------------: |
+    | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | **circle, disc, square** |
+
+- Los atributos van dentro de la etiqueta ``<ul>``.
+
+- El valor **disc** es el predeterminado.
 
 [⬆️](#índice)
 
