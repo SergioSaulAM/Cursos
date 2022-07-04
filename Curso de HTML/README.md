@@ -574,6 +574,31 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Listas Ordenadas
 
+- Lista enumerada.
+
+- Etiqueta: ``<ol></ol>``
+  - Los elementos se colocan con la etiqueta: ``<li></li>``
+
+    - **&lt;li&gt;** quiere decir _List Item_ y va dentro de la etiqueta ``<ol></ol>``
+
+  |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+  | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``start=""`` | Para empezar la lista en un número diferente  |     ❌     |       #        |
+  | ``reversed`` | Para empezar la lista en orden inverso        |     ✅     |       -        |
+  | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | 1, i, I, a, A |
+
+### Ejemplo
+```HTML
+<ol start="2" type="A" reversed>
+  <li>Objeto 1</li>
+  <li>Objeto 2</li>
+  <li>Objeto 3</li>
+</ol>
+```
+- Los atributos van dentro de la etiqueta ``<ol>``.
+
+- El valor 1 es el predeterminado.
+
 [⬆️](#índice)
 
 ---
