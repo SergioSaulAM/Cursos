@@ -780,7 +780,9 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ```HTML
 <a href="hola.html">Hacia la página Hola</a>
+
 <a href="https://jonmircha.com" rel="nofollow">Visita el sitio web jonmircha.com</a>
+
 <a href="https://www.spotify.com/mx/" rel="nofollow" target="_blank">
     <img src="img/bxl-spotify.svg" alt="Spotify Logo" width="300px" height="300px">
 </a>
@@ -791,6 +793,26 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Enlaces Internos
+
+- Como usamos Enlaces Internos estamos en la misma URL o documento.
+
+- El **#** nos ayuda a distinguir las diferentes anclas internas.
+
+- Para usar enlaces internos, se debe hacer uso de los links e identificadores: ``id=""``.
+
+- Usar caracteres en inglés (evitar caracteres ajenos al ingles). Si hay espacios, usar caracteres como el guión medio (-) o el guión bajo (_).
+
+- Para enlazar una ancla interna dentro del mismo documento se agrega al _href=""_:
+
+  - _**nombre_documento#id_elemento**_
+
+### Ejemplo
+
+```HTML
+<h2 id="inicio">Aprendiendo HTML</h2>
+
+<a href="index.html#inicio">⬆️</a> <!-- Esta etiqueta se enlaza al <h2> por el id -->
+```
 
 [⬆️](#índice)
 
