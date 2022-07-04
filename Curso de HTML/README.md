@@ -478,7 +478,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 | Etiqueta de excelencia: ``<div></div>`` | Etiqueta de excelencia: ``<span></span>`` |
  | Genera saltos de línea con sus etiquetas hermanas | Sólo ocupa el espacio necesario que tiene su contenido |
 | Ocupa todo el ancho de la pantalla. (Aunque no lo necesite) | No genera saltos de línea ni arriba ni abajo |
-| **Etiquetas**: Encabezados, párrafos, etiquetas estructurales (div, header, footer, etc.) | **Etiquetas**: Etiquetas de texto semánticas (negrita, cursiva, etc.) |
+| **Etiquetas**: Encabezados, párrafos, etiquetas estructurales (div, header, footer, etc.), Text-level semantics, Embedded content (img, video, etc.) | **Etiquetas**: Etiquetas de texto semánticas (negrita, cursiva, etc.), Document sections |
 
 - **Notas importantes**:
   - La etiqueta ``<span></span>`` es un contenedor genérico de línea que tampoco tiene estructura semántica.
@@ -488,6 +488,16 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Estilos en HTML
+
+- Formas de aplicar CSS:
+  - Aplicar el atributo _**style**_ dentro de la etiqueta:      
+    - ``style=""``
+  - Aplicar la etiqueta dentro de la etiqueta ``<head>``:
+    - ``<style></style>``.
+  - En el ``<head>`` colocar la etiqueta _link_ (enlazar CSS, documentos de texto, favicons):
+    - ``<link rel="stylesheet" href="{ubicación de archivo}"/>``
+
+- _**La forma correcta de aplicar CSS es a través de la etiqueta link**_.
 
 [⬆️](#índice)
 
