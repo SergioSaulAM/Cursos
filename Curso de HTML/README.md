@@ -847,6 +847,53 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Elementos Interactivos
 
+- Elementos Interactivos:
+
+  - Botones: ``<button></button>``
+  
+    - Para dar interactividad, se usa JavaScript.
+    
+    - Se considera mala práctica generar eventos de JS como atributos, en vez de usar un documento JS.
+
+    ### Ejemplo de Botón
+
+    ```HTML
+    <button onclick="alert(`Hola, haz clickeado el botón`)">Este es un botón</button>
+    ```
+  
+  - Details: ``<details></details>``
+
+    - Uso de: ``<summary></summary>`` y ``<article></article>``
+      
+      |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+      | :----------: | :-------------------------------------------: | :--------: | :------------: |
+      | ``open`` | Para mantener abierto la parte de details  |     ✅     |       -        |
+
+    ### Ejemplo de Detail
+
+
+    ```HTML
+    <details open>
+      <summary>Título del acordeón</summary> <!-- Título del acordeón -->
+
+      <article> <!-- Contenido del acordeón -->
+        <h3>Contenido del Acordeón</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolores quisquam est sunt incidunt commodi ex cumque expedita alias molestias libero quaerat nisi enim! Culpa, et! Accusamus voluptates dolor excepturi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolores quisquam est sunt incidunt commodi ex cumque expedita alias molestias libero quaerat nisi enim! Culpa, et! Accusamus voluptates dolor excepturi?</p>
+      </article>
+    </details>
+    ```
+
+  - Cajas de dialogo o ventanas modales: ``<dialog></dialog>``
+
+      |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+      | :----------: | :-------------------------------------------: | :--------: | :------------: |
+      | ``open`` | Para mantener abierto la parte de details  |     ✅     |       -        |
+
+
+    - Para las ventanas modales, lo recomendable es usar HTML y CSS.
+    - Las ventanas modales es una etiqueta experimental.
+
 [⬆️](#índice)
 
 ---
