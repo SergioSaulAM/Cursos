@@ -1206,6 +1206,31 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Metaetiquetas para Redes Sociales
 
+- Open Graph Protocol: Protocolo para compartir contenido de forma enriquecida en Redes Sociales.
+
+  - [Documentación de OGP](https://ogp.me/)
+
+  - La mayoría de las redes sociales la aceptan. Hay otras que agregan sus propias etiquetas como Twitter.
+
+  - Para documentos: ``og:url``.
+  - Para imágenes: ``og:url`` o ``og:img``.
+
+  ### Ejemplo de Open Graph Protocol
+  ```HTML
+  <meta property="og:title" content="Aprendiendo HTML">
+  <meta property="og:description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
+  <meta property="og:image" content="https://i.pinimg.com/originals/0f/a1/94/0fa194fad28bdf824955823a4b5ea5a7.png">
+  <meta property="og:url" content="https://tudominio.com/index.html">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:site" content="@sergiosaul">
+  ```
+
+- Para compartir cierto contenido en Redes Sociales, debemos ir a la documentación de desarrolladores de las Redes Sociales.
+
+- Todo funciona hasta que el sitio ya tenga dominio y todo ya esté bien establecido.
+
+- Debe haber meta etiquetas de redes sociales para cada página del sitio web.
+
 [⬆️](#índice)
 
 ---
