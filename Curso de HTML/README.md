@@ -505,6 +505,16 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Scripts en HTML
 
+- Formas de aplicar JS:
+
+  - Mediante la etiqueta ``<script>`` al final antes del cierre del body:
+    - ``<script></script>``
+  
+  - Mediante un archivo independiente. Para enlazar el archivo JS se usa:
+    - ``<script src="{ubicación archivo JS}"></script>``
+
+  - _**La forma correcta de aplicar JS es mediante un archivo externo a través de la etiqueta &lt;script&gt;**_.
+
 [⬆️](#índice)
 
 ---
