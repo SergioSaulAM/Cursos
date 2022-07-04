@@ -820,6 +820,27 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Enlaces y protocolos especiales
 
+- También se pueden acceder a otros protocolos con los enlaces (acceder a aplicaciones predeterminadas, números de teléfono, etc.).
+
+- En el ``href=""`` se coloca:
+
+  |   Protocolo   |                  Descripción                  |      Valor     |
+    | :----------: | :-------------------------------------------: | :------------: |
+    | ``mailto:`` | Abre la app de correo con el correo que está en el _mailto:_  |      correo        |
+    | ``tel:`` |     Abre la app de teléfono con el número de teléfono en el _tel:_    |      teléfono        |
+    | API  | Uso de APIs de empresas como WhatsApp           | link de API |
+
+
+### Ejemplo
+
+```HTML
+<a href="mailto:hola@gmail.com">Enlace a correo electrónico</a><br>
+  
+<a href="tel:2130928409184">Enlace a teléfono</a><br>
+
+<!-- Ejemplo de mandar mensaje a un número de WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=140812345&text=Hola" target="_blank">Enlace hacia WhatsApp</a>
+```
 [⬆️](#índice)
 
 ---
