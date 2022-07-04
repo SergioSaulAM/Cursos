@@ -973,6 +973,32 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Iframes
 
+- Un iframe carga la información del documento de la ruta (muestra el documento en un recuadro).
+
+- Etiqueta: ``<iframe></iframe>``
+
+|   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
+  | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``src=""`` | Para indicar ruta de contenido a mostrar  |     ❌     |       {ruta de archivo, URL}        |
+
+- En un iframe, se puede cargar:
+
+  - Archivos (PDF, HTML, etc).
+  - URL (excepción de algunos como Facebook).
+  - Videos de YouTube.
+  - Mapas de Google Maps.
+  - Playlist de Spotify.
+
+- En el _**src=""**_ se coloca la URL del archivo a cargar o archivos locales.
+
+- Hay páginas que bloquean la petición del _iframe_ debido a cuestiones de seguridad.
+
+### Ejemplo de Iframe
+
+```HTML
+<iframe src="https://jonmircha.com" frameborder="1"></iframe>
+```
+
 [⬆️](#índice)
 
 ---
