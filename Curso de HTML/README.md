@@ -1123,6 +1123,24 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Selects, Radios y Checkbox
 
+### [Tabla de atributos para formulario](#tabla-de-atributos-para-formulario)
+
+- El valor que se va en un ``<option>`` no es lo que ve el usuario, si no el valor del atributo ``value=""``.
+
+- La primer opción va a ser la que se muestre. El atributo ``selected`` pone como opción select la opción que se le indica, independientemente si está o no como primer opción.
+
+- La opción ``selected`` sólo se coloca a una opción`de radio botón. Si se coloca a más de 1, el navegador coloca como primera opción la primera que lea.
+
+- Es necesario poner el mismo nombre del atributo ``name=""`` a todos los RadioButtons como si fueran un grupo, ya que si no se hace eso, se podrán seleccionar más de 1 vez.
+
+- El valor que se manda al BackEnd en un radio botón es el valor que se puso en ``value=""``.
+
+- Si se aplica un ``required`` a un RB, aplica para todo el grupo.`
+
+- Para los checkbox es importante poner nombres diferentes en ``name=""`` a diferencia de los RB. (Si no hay muchos checkbox).
+
+- Si hay muchos checkbox, es bueno poner el mismo nombre a todos.
+
 [⬆️](#índice)
 
 ---
