@@ -559,6 +559,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Figuras
 
+- La etiqueta semántica (self-content) que siempre será una imagen.
+
+```HTML
+<figure>
+  <img src="img/Batman GIF.gif" alt="Batman GIF">
+  <figcaption>Batman GIF</figcaption>
+</figure>
+```
+
 [⬆️](#índice)
 
 ---
