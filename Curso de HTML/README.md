@@ -1171,6 +1171,35 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Metaetiquetas para SEO y Móviles
 
+- Etiqueta importante para un buen SEO:
+
+
+  - **URL Canónica**: ``<link rel="canonical" href="http://tudominio.url-canonica">`` 
+
+    - Una URL canónica es la URL que le dice a los buscadores la URL original.
+    
+    - La URL canónica se coloca una vez se sepa el dominio.
+
+  
+  - **Favicon**:   ``<link rel="icon" href="{ruta de favicon}">``
+
+
+    - Ícono de pestaña de página web.
+    - La imágen debe estar en formato de cuadro.
+    - Tamaño mínimo: 16px x 16px (Preferible más grande).
+    - Debe estar en formato PNG (o .ico).
+
+  - **Apple Touch Icon**:  ``<link rel="apple-touch-icon" href="{ruta de favicon}">``
+
+
+    - Ícono de imagen de acceso directo a un sitio web.
+    - Puede ser un ícono diferente al Favicon pero es recomendable que sea el mismo.
+
+  
+  - **Cambio de color nav bar**: ``<meta name="theme-color" content="{color}">``
+
+    - El color debe ser Hexadecimal.
+
 [⬆️](#índice)
 
 ---
