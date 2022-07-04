@@ -459,6 +459,12 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Interpretando la semántica en HTML
 
+- La semántica nos define las necesidades del contenido a plasmar.
+
+- En el ``<article></article>`` puede tener su propio ``<header>``, ``<footer>``, ``<section>``. Útil para publicaciones de blog.
+
+- Que la ``<div>`` no tenga una estructura semántica no significa que no se deban usar pero es recomendable tratar de usar una etiqueta semántica (header, footer, etc.) antes que el ``<div>``.
+
 [⬆️](#índice)
 
 ---
