@@ -625,6 +625,21 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Listas de Definición
 
+- Lista de términos.
+
+### Ejemplo
+
+```HTML
+<dl>
+    <dt>HTML</dt>
+    <dd>Es un lenguaje de marcado que define el contenido de la web.</dd>
+</dl>
+```
+
+- ``<dl></dl>``: Definition List (Lista de definición).
+- ``<dt></dt>``: Definition Term (Término de definición).
+- ``<dd></dd>``: Definition Data (Dato de definición).
+
 [⬆️](#índice)
 
 ---
