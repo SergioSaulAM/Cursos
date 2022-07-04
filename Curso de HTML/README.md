@@ -471,6 +471,18 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Etiquetas de línea y de bloque
 
+- De las etiquetas hay un conjunto que trabajan de forma de bloque y hay otras de línea.
+
+| Etiquetas de bloque | Etiquetas de línea |
+|:------------------: | :----------------: |
+| Etiqueta de excelencia: ``<div></div>`` | Etiqueta de excelencia: ``<span></span>`` |
+ | Genera saltos de línea con sus etiquetas hermanas | Sólo ocupa el espacio necesario que tiene su contenido |
+| Ocupa todo el ancho de la pantalla. (Aunque no lo necesite) | No genera saltos de línea ni arriba ni abajo |
+| **Etiquetas**: Encabezados, párrafos, etiquetas estructurales (div, header, footer, etc.) | **Etiquetas**: Etiquetas de texto semánticas (negrita, cursiva, etc.) |
+
+- **Notas importantes**:
+  - La etiqueta ``<span></span>`` es un contenedor genérico de línea que tampoco tiene estructura semántica.
+
 [⬆️](#índice)
 
 ---
