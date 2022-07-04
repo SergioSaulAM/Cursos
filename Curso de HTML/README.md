@@ -267,12 +267,12 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ```HTML
 <meta charset="UTF-8">
 ```
+
 - _charset_ hace referencia al juego de caracteres con la que está codifcada una página (relacionado con el idioma).
 
 - UTF-8 es el juego de caracteres estándar.
 
 - Si no se especifica el tipo de charset, los navegadores viejos no van a reconocer algunos caracteres como la ñ.
-
 
 ```HTML
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -401,7 +401,9 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Etiquetas de salto
+
 - **Estas etiquetas no tienen etiqueta de cierre**.
+
 ```HTML
 <br>    Salto de línea
 <hr>    Línea horizontal (Salto semántico de contenido)
@@ -430,7 +432,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - El proceso de maquetación va a depender de cómo esté organizado el diseño o UI de los sitios web.
 
-- Cuando llegó HTML5, se crearon esas etiquetas semánticas porque antes se usaba ``<div></div>`` para dividir las zonas de contenido el cual es una etiqueta contenedora _sin semántica_.
+- Cuando llegó HTML5, se crearon esas etiquetas semánticas porque antes se usaba `<div></div>` para dividir las zonas de contenido el cual es una etiqueta contenedora _sin semántica_.
 
 - Está mal creer que solamente deba haber un pie de página o una sola cabecera.
 
@@ -444,18 +446,18 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 <section></section>     Representa una sección de contenido genérico.
 <address></address>     Representa cualquier tipo de información de contacto.
 ```
+
 - **Notas importantes**:
 
   - <p style="font-size: 18px"><b>IMPORTANTE: SÓLO SE AGREGA UN SOLA SOLA ETIQUETA &lt;main&gt;.</b></p>
 
   - La navegación consiste en un conjunto de enlaces que formen un menú de navegación.
 
-  - Un ``<article></article>`` es una sección de autocontenido que por sí sola se entiende su contenido sin necesidad del contexto de la interfaz del sitio.
+  - Un `<article></article>` es una sección de autocontenido que por sí sola se entiende su contenido sin necesidad del contexto de la interfaz del sitio.
 
-  - La etiqueta ``<aside></aside>`` nos sirve para agregar publicidad.
+  - La etiqueta `<aside></aside>` nos sirve para agregar publicidad.
 
-- La semántica ba a ser muy subjetivo con base a l tipo de contenido del sitio web (se puede meter un ``<section></section>`` dentro de un ``<article></article>`` o viceversa).
-
+- La semántica ba a ser muy subjetivo con base a l tipo de contenido del sitio web (se puede meter un `<section></section>` dentro de un `<article></article>` o viceversa).
 
 [⬆️](#índice)
 
@@ -465,9 +467,9 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - La semántica nos define las necesidades del contenido a plasmar.
 
-- En el ``<article></article>`` puede tener su propio ``<header>``, ``<footer>``, ``<section>``. Útil para publicaciones de blog.
+- En el `<article></article>` puede tener su propio `<header>`, `<footer>`, `<section>`. Útil para publicaciones de blog.
 
-- Que la ``<div>`` no tenga una estructura semántica no significa que no se deban usar pero es recomendable tratar de usar una etiqueta semántica (header, footer, etc.) antes que el ``<div>``.
+- Que la `<div>` no tenga una estructura semántica no significa que no se deban usar pero es recomendable tratar de usar una etiqueta semántica (header, footer, etc.) antes que el `<div>`.
 
 [⬆️](#índice)
 
@@ -477,15 +479,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - De las etiquetas hay un conjunto que trabajan de forma de bloque y hay otras de línea.
 
-| Etiquetas de bloque | Etiquetas de línea |
-|:------------------: | :----------------: |
-| Etiqueta de excelencia: ``<div></div>`` | Etiqueta de excelencia: ``<span></span>`` |
- | Genera saltos de línea con sus etiquetas hermanas | Sólo ocupa el espacio necesario que tiene su contenido |
-| Ocupa todo el ancho de la pantalla. (Aunque no lo necesite) | No genera saltos de línea ni arriba ni abajo |
+|                                                                 Etiquetas de bloque                                                                  |                                    Etiquetas de línea                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+|                                                        Etiqueta de excelencia: `<div></div>`                                                         |                         Etiqueta de excelencia: `<span></span>`                          |
+|                                                  Genera saltos de línea con sus etiquetas hermanas                                                   |                  Sólo ocupa el espacio necesario que tiene su contenido                  |
+|                                             Ocupa todo el ancho de la pantalla. (Aunque no lo necesite)                                              |                       No genera saltos de línea ni arriba ni abajo                       |
 | **Etiquetas**: Encabezados, párrafos, etiquetas estructurales (div, header, footer, etc.), Text-level semantics, Embedded content (img, video, etc.) | **Etiquetas**: Etiquetas de texto semánticas (negrita, cursiva, etc.), Document sections |
 
 - **Notas importantes**:
-  - La etiqueta ``<span></span>`` es un contenedor genérico de línea que tampoco tiene estructura semántica.
+  - La etiqueta `<span></span>` es un contenedor genérico de línea que tampoco tiene estructura semántica.
 
 [⬆️](#índice)
 
@@ -494,12 +496,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ## Estilos en HTML
 
 - Formas de aplicar CSS:
-  - Aplicar el atributo _**style**_ dentro de la etiqueta:      
-    - ``style=""``
-  - Aplicar la etiqueta dentro de la etiqueta ``<head>``:
-    - ``<style></style>``.
-  - En el ``<head>`` colocar la etiqueta _link_ (enlazar CSS, documentos de texto, favicons):
-    - ``<link rel="stylesheet" href="{ubicación de archivo}"/>``
+
+  - Aplicar el atributo _**style**_ dentro de la etiqueta:
+    - `style=""`
+  - Aplicar la etiqueta dentro de la etiqueta `<head>`:
+    - `<style></style>`.
+  - En el `<head>` colocar la etiqueta _link_ (enlazar CSS, documentos de texto, favicons):
+    - `<link rel="stylesheet" href="{ubicación de archivo}"/>`
 
 - _**La forma correcta de aplicar CSS es a través de la etiqueta link**_.
 
@@ -511,11 +514,12 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Formas de aplicar JS:
 
-  - Mediante la etiqueta ``<script>`` al final antes del cierre del body:
-    - ``<script></script>``
-  
+  - Mediante la etiqueta `<script>` al final antes del cierre del body:
+
+    - `<script></script>`
+
   - Mediante un archivo independiente. Para enlazar el archivo JS se usa:
-    - ``<script src="{ubicación archivo JS}"></script>``
+    - `<script src="{ubicación archivo JS}"></script>`
 
 - _**La forma correcta de aplicar JS es mediante un archivo externo a través de la etiqueta &lt;script&gt;**_.
 
@@ -526,8 +530,8 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ## Imágenes
 
 - Etiqueta para agregar una imagen:
-  
-  - ``<img src="{ruta de imagen}" alt="{texto alternativo}">``
+
+  - `<img src="{ruta de imagen}" alt="{texto alternativo}">`
 
 - **El texto alternativo es para cargar por si la imagen está rota o no se puede cargar por algún motivo**.
 
@@ -535,7 +539,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Formatos soportados: JPG, PNG, GIF, SVG, etc.
 
-- Las imágenes tienen el atributo ``width=""`` y ``height=""`` (ancho y alto). **Lo ideal para definir el alto y ancho de las imágenes, se usa CSS**.
+- Las imágenes tienen el atributo `width=""` y `height=""` (ancho y alto). **Lo ideal para definir el alto y ancho de las imágenes, se usa CSS**.
 
 - Ahora es popular utilizar el formato de vectores como imágenes (como logotipos).
 
@@ -549,7 +553,7 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Se puede pegar el código SVG en el archivo HTML.
 
-- Se puede visualizar la imagen SVG en HTML con la etiqueta ``<img>``.
+- Se puede visualizar la imagen SVG en HTML con la etiqueta `<img>`.
 
 - Si el código es muy grande, lo más recomendable es tratarlo como imagen y no como SVG usando el código.
 
@@ -576,18 +580,20 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Lista enumerada.
 
-- Etiqueta: ``<ol></ol>``
-  - Los elementos se colocan con la etiqueta: ``<li></li>``
+- Etiqueta: `<ol></ol>`
 
-    - **&lt;li&gt;** quiere decir _List Item_ y va dentro de la etiqueta ``<ol></ol>``
+  - Los elementos se colocan con la etiqueta: `<li></li>`
 
-  |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
-  | :----------: | :-------------------------------------------: | :--------: | :------------: |
-  | ``start=""`` | Para empezar la lista en un número diferente  |     ❌     |       #        |
-  | ``reversed`` | Para empezar la lista en orden inverso        |     ✅     |       -        |
-  | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | **1, i, I, a, A** |
+    - **&lt;li&gt;** quiere decir _List Item_ y va dentro de la etiqueta `<ol></ol>`
+
+  |  Atributo  |                 Descripción                  | ¿Booleano? |       Valor       |
+  | :--------: | :------------------------------------------: | :--------: | :---------------: |
+  | `start=""` | Para empezar la lista en un número diferente |     ❌     |         #         |
+  | `reversed` |    Para empezar la lista en orden inverso    |     ✅     |         -         |
+  | `type=""`  |     Para cambiar el tipo de enumeración      |     ❌     | **1, i, I, a, A** |
 
 ### Ejemplo
+
 ```HTML
 <ol start="2" type="A" reversed>
   <li>Objeto 1</li>
@@ -595,7 +601,8 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
   <li>Objeto 3</li>
 </ol>
 ```
-- Los atributos van dentro de la etiqueta ``<ol>``.
+
+- Los atributos van dentro de la etiqueta `<ol>`.
 
 - El valor **1** es el predeterminado.
 
@@ -607,15 +614,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 - Listas con viñetas.
 
-- Etiqueta: ``<ul></ul>``
+- Etiqueta: `<ul></ul>`
 
-  - Los elementos se colocan con la etiqueta: ``<li></li>`` dentro de ``<ul></ul>``.
+  - Los elementos se colocan con la etiqueta: `<li></li>` dentro de `<ul></ul>`.
 
-    |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
-    | :----------: | :-------------------------------------------: | :--------: | :------------: |
-    | ``type=""``  | Para cambiar el tipo de enumeración           |     ❌     | **circle, disc, square** |
+    | Atributo  |             Descripción             | ¿Booleano? |          Valor           |
+    | :-------: | :---------------------------------: | :--------: | :----------------------: |
+    | `type=""` | Para cambiar el tipo de enumeración |     ❌     | **circle, disc, square** |
 
-- Los atributos van dentro de la etiqueta ``<ul>``.
+- Los atributos van dentro de la etiqueta `<ul>`.
 
 - El valor **disc** es el predeterminado.
 
@@ -636,9 +643,9 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 </dl>
 ```
 
-- ``<dl></dl>``: Definition List (Lista de definición).
-- ``<dt></dt>``: Definition Term (Término de definición).
-- ``<dd></dd>``: Definition Data (Dato de definición).
+- `<dl></dl>`: Definition List (Lista de definición).
+- `<dt></dt>`: Definition Term (Término de definición).
+- `<dd></dd>`: Definition Data (Dato de definición).
 
 [⬆️](#índice)
 
@@ -646,25 +653,26 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Tablas
 
-- Etiqueta: ``<table></table>``.
+- Etiqueta: `<table></table>`.
 
-- Primero definir la fila con ``<tr></tr>`` (Table Row).
+- Primero definir la fila con `<tr></tr>` (Table Row).
 
-- Después de definir las filas, definir las columnas ``<td></td>`` (Table Data).
-  - **Se define dentro de ``<tr></tr>``**.
+- Después de definir las filas, definir las columnas `<td></td>` (Table Data).
 
-- Para crear grupos de filas o darle una estructura semántica usar: 
-  - ``<thead></thead>``: Table Header
-  - ``<tbody></tbody>``: Table Body
-  - ``<tfoot></tfoot>``: Table Foot
+  - **Se define dentro de `<tr></tr>`**.
 
-- Para colocar un header a la tabla, se usa ``<th></th>`` (Table Head).
+- Para crear grupos de filas o darle una estructura semántica usar:
 
-|   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
-  | :----------: | :-------------------------------------------: | :--------: | :------------: |
-  | ``colspan=""``  | Unir celdas por columnas  |     ❌     |       #        |
-  | ``rowspan=""``  | Unir celdas por filas     |     ❌     |       #        |
+  - `<thead></thead>`: Table Header
+  - `<tbody></tbody>`: Table Body
+  - `<tfoot></tfoot>`: Table Foot
 
+- Para colocar un header a la tabla, se usa `<th></th>` (Table Head).
+
+|   Atributo   |       Descripción        | ¿Booleano? | Valor |
+| :----------: | :----------------------: | :--------: | :---: |
+| `colspan=""` | Unir celdas por columnas |     ❌     |   #   |
+| `rowspan=""` |  Unir celdas por filas   |     ❌     |   #   |
 
 ### Ejemplo Tabla Simple
 
@@ -747,6 +755,36 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 ---
 
 ## Enlaces
+
+- Elementos que nos permiten ir a otras rutas, archivos, URL, etc. Pueden ser enlaces relativos a carpeta donde estemos.
+
+- Etiqueta: `<a href=""></a>`
+
+  |  Atributo   |                Descripción                | ¿Booleano? |              Valor               |
+  | :---------: | :---------------------------------------: | :--------: | :------------------------------: |
+  |  `href=""`  |      Dirección a ruta, archivo o URL      |     ❌     |       {URL, documentos, directorio}        |
+  | `target=""` |        Forma de abrir una pestaña         |     ❌     | \_blank, \_self, \_parent, \_top |
+  |  `rel=""`   | La relación del link respecto a la página |     ❌     |             nofollow             |
+
+- Si son enlaces externos, hay que poner _**http://**_ o _**https://**_ y el _**dominio**_.
+
+- Los enlaces son etiquetas de línea.
+
+- Para abrir un enlace en una nueva pestaña, se usa el atributo _target=""_ con el atributo \__blank_.
+
+- Para enlaces externos, es recomendable agregar el atributo ``rel="nofollow"` para que las arañas sepan que dicho enlace no forma parte del sitio.
+
+- También se pueden agregar imágenes o vectores como enlaces (colocar una etiqueta `<img/>` dentro de la etiqueta `<a href=""></a>`).
+
+### Ejemplos
+
+```HTML
+<a href="hola.html">Hacia la página Hola</a>
+<a href="https://jonmircha.com" rel="nofollow">Visita el sitio web jonmircha.com</a>
+<a href="https://www.spotify.com/mx/" rel="nofollow" target="_blank">
+    <img src="img/bxl-spotify.svg" alt="Spotify Logo" width="300px" height="300px">
+</a>
+```
 
 [⬆️](#índice)
 
