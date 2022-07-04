@@ -894,6 +894,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
     - Para las ventanas modales, lo recomendable es usar HTML y CSS.
     - Las ventanas modales es una etiqueta experimental.
 
+  ### Ejemplo de Dialog
+    ```HTML
+    <dialog open>
+        Esto es una ventana modal en HTML
+    </dialog>
+    ```
+
 [⬆️](#índice)
 
 ---
