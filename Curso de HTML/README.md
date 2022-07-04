@@ -1156,6 +1156,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## DataAtributtes
 
+- Los DataAtributtes nos permite a los desarrolladores agregar atributos que nosotros mismos nos inventamos a las etiquetas.
+
+- Nos sirven para obtener información de una Base de Datos.
+
+- Declaración: **data-* = ""**
+  - __*__ : Nombre (como sea).
+
+- Generalmente todos los valores están en inglés.
+
 [⬆️](#índice)
 
 ---
