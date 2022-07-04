@@ -912,9 +912,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 - Las etiquetas de audio y video son **etiquetas de línea**.
 
 - <p style="font-size: 22px">Audio:</p>
+
+  - Etiqueta: ``<audio src=""></audio>``
+    - Uso del atributo *__src=""__*.
   
   |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
   | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``src=""`` | Para indicar ruta de audio y cargarlo  |     ❌     |       {ruta de audio}        |
   | ``controls`` | Para visualizar los controles de audio  |     ✅     |       -        |
   | ``autoplay`` | Para reproducir automáticamente el audio  |     ✅     |       -        |
   | ``loop`` | Para repetir el audio de forma automática  |     ✅     |       -        |
@@ -936,16 +940,20 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
   <audio src="audio/Alvaro López & Resqband - Jericó (Performance Video).mp3" controls preload></audio>
   ```
 
-- <p style="font-size: 22px">Audio:</p>
+- <p style="font-size: 22px">Video:</p>
+
+  - Etiqueta: ``<video src=""></video>``
+      - Uso del atributo *__src=""__*.
   
   |   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     |
   | :----------: | :-------------------------------------------: | :--------: | :------------: |
+  | ``src=""`` | Para indicar ruta de video y cargarlo  |     ❌     |       {ruta de video}        |
+  | ``poster=""`` | Para colocar poster en video si no se reproduce  |     ❌     |       {ruta de imagen}        |
   | ``controls`` | Para visualizar los controles de audio  |     ✅     |       -        |
   | ``autoplay`` | Para reproducir automáticamente el audio  |     ✅     |       -        |
   | ``loop`` | Para repetir el audio de forma automática  |     ✅     |       -        |
   | ``muted`` | Para silenciar el audio  |     ✅     |       -        |
   | ``preload`` | Para precargar el audio en el caché del navegador  |     ✅     |       -        |
-  | ``poster=""`` | Para colocar poster en video si no se reproduce  |     ❌     |       {ruta de imagen}        |
 
   - El atributo _**autoplay**_ no funciona con navegadores móviles. Además, requiere del permiso del usuario en el navegador para poder funcionar.
   
