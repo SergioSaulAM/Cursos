@@ -1140,12 +1140,15 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 - Para los checkbox es importante poner nombres diferentes en ``name=""`` a diferencia de los RB. (Si no hay muchos checkbox).
 
 - Si hay muchos checkbox, es bueno poner el mismo nombre a todos.
-
 [⬆️](#índice)
 
 ---
 
 ## Formualrio de Contacto
+
+- El atributo ``pattern=""`` es para únicamente los ``<input>``.
+
+- **[formsubmit](https://formsubmit.co/)**: Servicio que nos permite mandar la info del formulario a un correo sin programar.
 
 [⬆️](#índice)
 
