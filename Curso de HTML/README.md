@@ -1237,4 +1237,13 @@ HTML es el lenguaje de marcado que nos define el contenido que vemos a través d
 
 ## Accesibilidad Web
 
+|   Atributo   |                  Descripción                  | ¿Booleano? |      Valor     | Para |
+| :----------: | :-------------------------------------------: | :--------: | :------------: | :---: |
+| ``role=""`` | Para indicar el rol de la etiqueta  |     ❌     |    list, list item, a, link, etc.    | Todos los elementos HTML |
+| ``aria-label=""`` | Descripción para lectores automáticos para personas discapacitadas |    ❌    |  {Descripción de contenido}  | Todos los elementos HTML |
+| ``tabindex=""`` | Número (+ o -) para dar un orden donde el tabulador va a pasar  |     ❌     |       #        | Todos los elementos HTML |
+
+- Usar estos atributos en las partes más importantes del archivo HTML o en todos los elementos.
+- Todos los elementos interactivos de HTML (links, inputs, etc) tienen por defecto un _tabindex_.
+
 [⬆️](#índice)
