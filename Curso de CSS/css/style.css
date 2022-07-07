@@ -1,25 +1,25 @@
-/* ------------------------SINTAXIS BÁSICA----------------------- */
+/** ------------------------SINTAXIS BÁSICA----------------------- */
 
 /* Regla CSS consta de 2 partes
 1) selector: elemento HTML al que nosotros podemos aplicarle ese bloque de declaración de estilos.
 2) bloque de declaraciones: Cada uno de los atributos que vamos a modificar. 
 
-*Dentro de estos, la sintaxis de las declaraciones es:
+Dentro de estos, la sintaxis de las declaraciones es:
 atributo: valor; (el ; quiere decir que termina la declaración)
 
-* Si el nombre del atributo css tiene más de dos palabras se escribe:
+Si el nombre del atributo css tiene más de dos palabras se escribe:
 atributo-de-mas-de-dos-palabras: otro-valor;
 
-* El bloque de declaración va a estar definido por las llaves o curly brackets {}.
+El bloque de declaración va a estar definido por las llaves o curly brackets {}.
 
-* selector {
+selector {
     bloque de declaraciones
 }
 */
 
 
 
-/* ------------------------FORMAS DE INVOCACIÓN----------------------- */
+/** ------------------------FORMAS DE INVOCACIÓN----------------------- */
 
 /* Son mala práctica los @import porque son bloqueantes a la hora de que el navegador lee esta instrucción */
 @import url("otra-hoja.css ");
@@ -30,7 +30,7 @@ h1 {
 }
 
 
-/* ----------------------VERSIONES, DOCUMENTACIÓN Y ENLACES DE REFERENCIA--------------------- */
+/** ----------------------VERSIONES, DOCUMENTACIÓN Y ENLACES DE REFERENCIA--------------------- */
 /* Links de referencia y documentación 
 
 -https://es.wikipedia.org/wiki/CSS
@@ -42,7 +42,7 @@ h1 {
 */
 
 
-/* ----------------------------SELECTORES BÁSICOS: ETIQUETAS, IDENTIFICADORES Y CLASES---------------------------- */
+/** ----------------------------SELECTORES BÁSICOS: ETIQUETAS, IDENTIFICADORES Y CLASES---------------------------- */
 
 /* 
 Selectores básicos:
@@ -82,7 +82,7 @@ p {
     color: white;
 }
 
-/* ---------------------------SELECTORES HIJOS DIRECTOS Y DESCENDIENTES----------------------------- */
+/** ---------------------------SELECTORES HIJOS DIRECTOS Y DESCENDIENTES----------------------------- */
 
 
 /* Selector de hijo directo */
@@ -106,7 +106,7 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 
 
 
-/* ----------------------------SELECTOR DE HERMANOS Y ADYACENTE---------------------------- */
+/** ----------------------------SELECTOR DE HERMANOS Y ADYACENTE---------------------------- */
 
 /* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estén por debajo del elemento de referencia */
 
@@ -123,7 +123,7 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 
 
 
-/* ----------------------SELECTORES DE ATRIBUTOS------------------- */
+/** ----------------------SELECTORES DE ATRIBUTOS------------------- */
 
 /* Sin valores */
 .selectores-atributos a[href] {
@@ -169,7 +169,7 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 
 
 
-/* ----------------------SELECTOR UNIVERSAL------------------- */
+/** ----------------------SELECTOR UNIVERSAL------------------- */
 
 /* Se representa con el * (asterisco) */
 * {
