@@ -164,3 +164,20 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 .selectores-atributos a[class|="menu"] {
     font-style: italic;
 }
+
+
+
+
+
+/* ----------------------SELECTOR UNIVERSAL------------------- */
+
+/* Se representa con el * (asterisco) */
+* {
+    font-family: sans-serif;
+}
+
+
+/* Selector universal según un contexto */
+.selector-universal * {
+    font-size: 24px;
+}
