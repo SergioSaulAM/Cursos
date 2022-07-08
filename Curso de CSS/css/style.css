@@ -294,3 +294,60 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 .articulo-pseudoclases *:not(div, .seccion-1) {
     background-color: limegreen; 
 }
+
+
+
+
+
+
+
+/**--------------------------------PSEUDOELEMENTOS------------------------------ */
+
+/* 
+
+Pseudoelementos - Dan estilos a partes específicas de un elemento, se unsa el :: para diferenciarlos de las pseudoclases.
+
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements 
+
+*/
+
+/* Para ::after y ::before, la propiedad content:"" es muy imporntante*/
+
+.saga-geminis::before {
+    content: "🤼‍♂️";
+}
+
+.saga-geminis::after {
+    content: "♊";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after{
+    content: "USD";
+    font-weight: bold;
+}
+
+
+
+
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line{
+    color: coral;
+}
+
+.p-pseudoelementos::selection{
+    color: greenyellow;
+    background-color: black;
+}
+
+.input-pseudoelementos::placeholder{
+    color: green;
+}
