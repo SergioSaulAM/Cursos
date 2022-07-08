@@ -181,3 +181,63 @@ No funcionaría porque b no es un hijo directo (elemento de primer nivel).
 .selector-universal * {
     font-size: 24px;
 }
+
+
+
+
+
+/**--------------------------------PSEUDOCLASES DE ESTADO------------------------------- */
+
+/* 
+    Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elemento.
+
+    https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+
+*/
+
+/* ? Pseudoclases para Formulario */
+.form-pseudoclases *:required{
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid{
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid{
+    border-color: red;
+}
+
+.form-pseudoclases *:focus{
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+}
+
+
+/* ? Pseudoclases para Enlaces */
+
+/*
+    a:link { color: blue; }          /* Enlaces no visitados 
+    a:visited { color: purple; }     /* Enlaces visitados 
+    a:hover { background: yellow; }  /* El usuario esta sobre el enlace
+    a:active { color: lime; }        /* Enlaces activos 
+*/
+
+.menu-pseudoclases a:visited{
+    color: olive;
+}
+
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.p-pseudoclases:hover{
+    font-size: 20px;
+}
+
+#temario-css:target {
+    background-color: lightgreen;
+}
