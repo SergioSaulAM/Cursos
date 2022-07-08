@@ -351,3 +351,23 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
 .input-pseudoelementos::placeholder{
     color: green;
 }
+
+
+
+
+
+
+/**--------------------------------AGRUPAR SELECTORES------------------------------ */
+
+/* ? Se separan por comas (,) */
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea{
+    border-color: yellow;
+    border-width: 2px;
+    border-style: dashed;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
