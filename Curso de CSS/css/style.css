@@ -442,7 +442,7 @@ La Cascada es el mecanismo en que el navegador aplica los estilos. Y toma en cue
         
         
 /**--------------------------------PRACTICANDO CASCADA Y ESPECIFICIDAD------------------------------ */
-        
+
 blockquote#cita-marco.cita-marco {
     background-color: lightsteelblue;
 }
@@ -473,4 +473,38 @@ blockquote#cita-marco {
 
 .cita-marco {
     background-color: moccasin !important;
+    background-color: darkorange !important;
+    font-size: 32px;
+    border-style: dotted;
+    border-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**--------------------------------HERENCIA------------------------------ */
+
+/* 
+La Herencia es la capacidad de un selector de obtener (heredar) los valores de sus ancestros más cercanos, para aplicarla se usa el valor inherit, si queremos evitarla podemos asignar otro valor o inicializar la propiedad en cuestión con el valor initial (user agent).
+
+
+
+Atributos heredables:
+https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
+*/
+
+
+.cita-marco cite {
+    background-color: pink;
+    background-color: inherit;
+    font-size: initial;
+    border-style: inherit;
+    border-color: inherit;
 }
