@@ -16,6 +16,12 @@
 */
 
 h1 {
-    border-width: 3px;
+    width: 400px;
+    height: 200px;
+    /* Propiedades de tipo shorthand */
+    border-color: green;
+    border-top-color: red;
+    border-width: thick; /* thin - 1px, medium - 3px, thick - 5px */
     border-style: solid;
+    border: 2px dashed blue; 
 }
