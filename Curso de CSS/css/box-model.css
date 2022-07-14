@@ -33,6 +33,12 @@ h1 {
 
 
 
+
+
+
+
+/** -------------------MARGIN Y PADDING--------------------- */
+
 /* 
     Esto aplica para margin y padding
     1 valor   = 
@@ -68,11 +74,16 @@ h1 {
 
 
 
+
+
+
+/** -------------------CAJAS DE LÍNEA VS CAJAS DE BLOQUE--------------------- */
+
 /* 
 Caja de Línea
-    - Ocupan el espacio necesario para mostrar su contenido.
-    - No tienen dimensiones modificables (alto, ancho).
-    - Permiten otros elementos a su lado.
+- Ocupan el espacio necesario para mostrar su contenido.
+- No tienen dimensiones modificables (alto, ancho).
+- Permiten otros elementos a su lado.
     - Padding y margin solo empujan a elementos adyacentes en horizontal, NUNCA EN VERTICAL.
 
 Caja de Bloque
@@ -94,8 +105,45 @@ Caja de Bloque
 
 .caja-bloque{
     margin: 32px;
+    display: block;
 }
 
 .caja-linea{
     margin: 48px;
+    display: inline;
+}
+
+
+
+
+
+/** -------------------PROPIEDAD DISPLAY--------------------- */
+/* 
+    - inline
+    - block
+    - inline-block: Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho).
+    - none
+    - table
+    - list-item
+    - flex
+    - grid
+*/
+
+.caja-none,
+.caja-linea-bloque {
+    background-color: darkolivegreen;
+    color: white;
+    width: 600px;
+    height: 300px;
+    border: medium black solid;
+}
+
+
+.caja-linea-bloque{
+    display: inline-block;
+}
+
+.caja-none{
+.caja-none{
+    display: none;
 }
