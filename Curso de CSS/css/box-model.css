@@ -15,6 +15,10 @@
         4. Izquierda (Left)
 */
 
+body {
+    margin: 0;
+}
+
 h1 {
     width: 400px;
     height: 200px;
@@ -23,5 +27,39 @@ h1 {
     border-top-color: red;
     border-width: thick; /* thin - 1px, medium - 3px, thick - 5px */
     border-style: solid;
-    border: 2px dashed blue; 
+    border: 2px dashed blue;
 }
+
+
+
+
+/* 
+    Esto aplica para margin y padding
+    1 valor   = 
+        - Aplica a los 4 lados
+    2 valores = 
+        - 1er valor: Lados verticales (t/b)
+        - 2do valor: Lados horizontales (l/r)
+    3 valores = 
+        - 1er valor: Top
+        - 2do valor: Lados Horizontales (l/r)
+        - 3er valor: Bottom
+    4 valores = Pensar en las manecillas del reloj
+        - 1er valor: Top (12)
+        - 2do valor: Right (3)
+        - 3er valor: Bottom (6)
+        - 4to valor: Left (9)
+*/
+.caja-uno,
+.caja-dos {
+    background-color: chocolate;
+    border: medium solid orange;
+    padding: 20px;
+    margin: 20px;
+    padding: 20px 40px;
+    margin: 40px 20px;
+    padding: 0 40px 20px;
+    margin: 50px 30px 0;
+    padding: 0 40px 20px 50px;
+    margin: 100px 50px 30px 0;
+}   
