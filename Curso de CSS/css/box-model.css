@@ -119,18 +119,19 @@ Caja de Bloque
 
 /** -------------------PROPIEDAD DISPLAY--------------------- */
 /* 
-    - inline
-    - block
-    - inline-block: Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho).
-    - none
-    - table
-    - list-item
-    - flex
-    - grid
+- inline
+- block
+- inline-block: Se comporta como un elemento de línea pero acepta modificar sus dimensiones (alto y ancho).
+- none
+- table
+- list-item
+- flex
+- grid
 */
 
 .caja-none,
-.caja-linea-bloque {
+.caja-linea-bloque,
+.caja-hidden{
     background-color: darkolivegreen;
     color: white;
     width: 600px;
@@ -144,6 +145,17 @@ Caja de Bloque
 }
 
 .caja-none{
-.caja-none{
     display: none;
+}
+
+
+
+
+
+
+
+
+/** -------------------PROPIEDAD VISIBILITY--------------------- */
+.caja-hidden {
+    visibility: hidden;
 }
