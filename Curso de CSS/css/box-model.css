@@ -193,3 +193,28 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+
+
+
+
+
+
+
+/** -------------------FLOAT--------------------- */
+
+.container-floats {
+  background-color: cornflowerblue;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
