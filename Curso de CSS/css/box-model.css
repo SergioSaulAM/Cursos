@@ -218,3 +218,22 @@ html {
 .clearfix {
   clear: both;
 }
+
+
+
+
+
+
+
+
+/** -------------------COLAPSO DE MÁRGENES VERTICALES--------------------- */
+
+.margin-collapse {
+  background-color: skyblue;
+}
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
