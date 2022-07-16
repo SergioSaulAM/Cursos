@@ -237,3 +237,10 @@ html {
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
+.margin-collapse span {
+  border: thin solid black;
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+}
