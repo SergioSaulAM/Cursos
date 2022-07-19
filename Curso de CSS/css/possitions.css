@@ -39,3 +39,24 @@ Las propiedades top y left van a tener preferencia sobre bottom y right respecti
 Estas 5 propiedades no funcionan con el valor de static.
     
 */
+
+
+
+
+
+
+
+
+
+/** -------------------POSICIONAMIENTO STATIC--------------------- */
+
+/* 
+    static: Es el valor por defecto, significa que el elemento respeta el flujo del documento HTML, por lo que no se puede mover ni posicionar.
+*/
+
+.static {
+    background-color: yellow;
+    position: static;
+    top: 10px;
+    left: 10px;
+}
