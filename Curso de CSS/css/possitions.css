@@ -71,7 +71,7 @@ Estas 5 propiedades no funcionan con el valor de static.
 /** -------------------POSICIONAMIENTO RELATIVE--------------------- */
 
 /* 
-    relative: El elemento conserva sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia su posición original.
+relative: El elemento conserva sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia su posición original.
 */
 
 .relative {
@@ -87,4 +87,52 @@ Estas 5 propiedades no funcionan con el valor de static.
     left: -10px;
     top: 300px;
     left: 50px;
+}
+
+
+
+
+
+
+
+
+/** -------------------POSICIONAMIENTO ABSOLUTO--------------------- */
+/* 
+    absolute: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve puede tomar como referencia 2 elementos:
+        
+        1) El primer ancestro con posicionamiento relativo.
+        2) Si no encuentra un ancestro relativo, se mueve respecto del documento HTML.
+*/
+
+.absolute {
+    background-color: tomato;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    /* top: 0;
+    left: 0; */
+    /* top: 100px;
+    left: 100px;*/
+    right: 0;
+    bottom: 0;
+}
+
+.relative-parent {
+    background-color: khaki;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+}
+
+.absolute-child {
+    background-color: lightcoral;
+    position: absolute;
+    /* left: 0;
+    top: 0;
+    top: -50px;
+    left: -30px;*/
+    right: 0;
+    bottom: 0;
 }
