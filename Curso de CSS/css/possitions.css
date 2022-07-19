@@ -1,0 +1,41 @@
+/** -------------------POSICIONAMIENTO CSS--------------------- */
+
+
+/* 
+Posicionamiento CSS
+
+Las propiedades FLOAT y POSITION nos permiten modificar la posición natural de cualquier elemento del documento HTML.
+
+El navegador coloca cada elemento teneindo en cuenta el orden en el que aparece en el documento y su tipo de visualización dependiendo si es un elemento de línea o de bloque.
+
+
+Con FLOAT y POSITION podemos modificar este comportamiento.
+
+Elementos Flotantes:
+
+    - float: Convierte un elemento en flotante desplazándolo hasta la zona más a la izquierda o más a la derecha de la posición en la que originalmente se encontraba.
+    - clear: Limpia la flotación (left, right, both).
+
+
+Tipo de Posicionamiento:
+
+    - static (default)
+    - relative
+    - absolute
+    - fixed
+    - sticky 
+
+
+Para mover los elementos posicionados se activan las propiedades:
+
+    - top (vertical - eje Y)
+    - bottom (vertical - eje Y)
+    - left (horizontal - eje X)
+    - right (horizontal - eje X)
+    - z-index (profundidad - eje Z)
+
+Las propiedades top y left van a tener preferencia sobre bottom y right respectivamente.
+
+Estas 5 propiedades no funcionan con el valor de static.
+    
+*/

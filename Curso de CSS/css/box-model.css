@@ -270,5 +270,5 @@ html {
   padding: 16px;
   margin-left: auto;
   margin-right: auto;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
