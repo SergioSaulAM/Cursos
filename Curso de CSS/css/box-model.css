@@ -238,9 +238,37 @@ html {
   margin-bottom: 16px;
 }
 
+
+
+
+
+
+
+
+/** -------------------ADICIÓN DE MÁRGENES HORIZONTALES--------------------- */
 .margin-collapse span {
   border: thin solid black;
   display: inline-block;
   margin-right: 16px;
   margin-left: 16px;
+}
+
+
+
+
+
+
+
+
+/** -------------------CENTRADO DE CAJAS--------------------- */
+
+.sitio-web {
+  border: thin solid black;
+  background-color: thistle;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
 }
