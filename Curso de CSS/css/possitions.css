@@ -98,7 +98,7 @@ relative: El elemento conserva sus dimensiones y posición original en el flujo 
 
 /** -------------------POSICIONAMIENTO ABSOLUTO--------------------- */
 /* 
-    absolute: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve puede tomar como referencia 2 elementos:
+absolute: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve puede tomar como referencia 2 elementos:
         
         1) El primer ancestro con posicionamiento relativo.
         2) Si no encuentra un ancestro relativo, se mueve respecto del documento HTML.
@@ -135,4 +135,27 @@ relative: El elemento conserva sus dimensiones y posición original en el flujo 
     left: -30px;*/
     right: 0;
     bottom: 0;
+}
+
+
+
+
+
+
+
+
+/** -------------------POSICIONAMIENTO FIJO--------------------- */
+/* 
+    fixed: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia el documento HTML y queda fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda FIJO.
+*/
+
+.fixed {
+    background-color: lightgreen;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+/*  right:20px;
+    bottom: 10px; */
+    top: 30px;
+    left: 400p x;
 }
