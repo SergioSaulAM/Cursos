@@ -1,3 +1,4 @@
+/** -------------------------CABECERA FIXED VS CABECERA STICKY------------------------- */
 body {
     margin: 0;
 }
@@ -6,7 +7,6 @@ body {
     background-color: mistyrose;
     width: 100%;
     height: 50px;
-    z-index: 10;
 }
 
 .fixed-top {
@@ -27,6 +27,15 @@ body {
     height: 100vh; 
 }
 
+
+
+
+
+
+
+
+/** -------------------------EFECTO SLIDES CON POSITION STICKY------------------------- */
+
 .slide {
     background-color: paleturquoise;
     width: 100%;
@@ -45,4 +54,31 @@ body {
     top: 50px;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/** -------------------------VENTANA MODAL / MENÚ MÓVIL CON POSICIONAMIENTO FIXED------------------------- */
+
+.modal-window {
+    background-color: black;
+    /* position: absolute; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+    color: white;
+    display: none;
+}
+
+
+.modal-window:target{
+    display: block;
 }
