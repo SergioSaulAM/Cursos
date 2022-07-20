@@ -82,3 +82,20 @@ body {
 .modal-window:target{
     display: block;
 }
+
+
+
+
+
+
+
+
+/** -------------------------MÁRGENES NEGATIVOS------------------------- */
+
+.box {
+    background-color: sandybrown;
+    padding: 20px;
+    margin-top: -30px;
+    margin-left: -30px;
+    padding-right: -30px;
+}
