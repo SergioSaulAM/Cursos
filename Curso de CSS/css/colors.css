@@ -1,0 +1,48 @@
+/** ----------------------------COLORES EN CSS--------------------------- */
+/* 
+    https://htmlcolorcodes.com/es/
+*/
+
+
+/** ----------------------------NOMBRES DE COLORES--------------------------- */
+.color-by-name {
+    background-color: coral;
+    color: rebeccapurple;
+    border: thick solid greenyellow;
+}
+
+
+
+
+
+
+
+/** ----------------------------SISTEMA HEXADECIMAL--------------------------- */
+
+/* 
+    0 1 2 3 4 5 6 7 8 9 A B C D E F
+
+    RedGreenBlue (Medios Digitales) vs CyanMagentaYellowKey (Medios Impresos)
+
+    Colores en HEX van a ser colores de 6 dígitos.
+    #FF6600
+*/
+
+.color-hex {
+    background-color: #ff6600;
+    background-color: #f60;
+    background-color: #ff6605;
+    background-color: #00000050;
+    background-color: #0000;
+    color: #12ac78;
+    border: thick solid #ffffff;
+    border: thick solid #fff;
+    border: thick solid #ff0000;    
+    border: thick solid #f00;    
+    border: thick solid #00ff00;    
+    border: thick solid #0f0;    
+    border: thick solid #0000ff;    
+    border: thick solid #00f;    
+    border: thick solid #000000;    
+    border: thick solid #000;    
+}
