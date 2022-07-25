@@ -78,3 +78,44 @@
     color: rgb(255, 102, 0);
     border: thick solid rgb(128, 109, 7);
 }
+
+
+
+
+
+
+
+/** ----------------------------SISTEMA HSL--------------------------- */
+
+/* 
+    HueSaturationLightness (Tono-Saturación-Luminosidad)
+
+    1er valor es Hue (Círculo cromático) -> representa un ángulo:
+        0° / 360° -> red
+        60° -> yellow
+        120° -> green
+        180° -> cyan
+        240° -> blue
+        300° -> magenta
+
+    2do valor es Saturation (Intensidad del color):
+        0% -> Escala de grises
+        100% -> Color puro
+
+    3er valor es Lightness (Luminosidad del color) -> Tender de blanco a negro:
+        0% -> Negro
+        50% -> Color puro
+        100% -> Blanco
+*/
+
+.color-hsl {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(120, 100%, 50%);
+    background-color: hsl(240, 100%, 50%);
+    background-color: hsl(180, 100%, 50%);
+    background-color: hsl(30, 100%, 50%);
+    background-color: hsla(30, 100%, 50%, 0.5);
+    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border: thick solid hsl(210, 75%, 65%);
+}
