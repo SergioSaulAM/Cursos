@@ -44,5 +44,37 @@
     border: thick solid #0000ff;    
     border: thick solid #00f;    
     border: thick solid #000000;    
-    border: thick solid #000;    
+    border: thick solid #000;
+}
+
+
+
+
+
+
+
+
+/** ----------------------------SISTEMA RGB--------------------------- */
+
+/* 
+    * Acepta 8 bits por canal
+    
+    * 1 Bit es la unidad de información para las computadoras (0 / 1)
+    
+    * Para cada canal tenemos 8 posiciones
+    
+    * 2 Elevado a la potencia 8 = 2*2*2*2*2*2*2*2 = 256 (256 posibles valores de colores) (Es 255 porque no empieza la numeración con 1, si no 0 y en computación se toma en cuenta el 0)
+    
+    * Por cada canal de color 
+*/
+
+.color-rgb {
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 0, 255);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1);
+    color: rgb(255, 102, 0);
+    border: thick solid rgb(128, 109, 7);
 }
