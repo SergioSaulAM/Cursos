@@ -119,3 +119,25 @@
     color: hsl(0, 0%, 100%);
     border: thick solid hsl(210, 75%, 65%);
 }
+
+
+
+
+
+
+
+
+/** ----------------------------TRANSPARENT & CURRENT COLOR--------------------------- */
+
+/* 
+    Valor transparent: Color transparente es igual a aplicar rgba(0,0,0,0).
+
+    Valor currentColor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro más cercano al más alejado.
+*/
+
+.color-transparent-current {
+    background-color: darkmagenta;
+    background-color: currentColor;
+    background-color: transparent;
+    border: thick solid currentColor;
+}
