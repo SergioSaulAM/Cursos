@@ -130,9 +130,9 @@
 /** ----------------------------TRANSPARENT & CURRENT COLOR--------------------------- */
 
 /* 
-    Valor transparent: Color transparente es igual a aplicar rgba(0,0,0,0).
+Valor transparent: Color transparente es igual a aplicar rgba(0,0,0,0).
 
-    Valor currentColor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro más cercano al más alejado.
+Valor currentColor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro más cercano al más alejado.
 */
 
 .color-transparent-current {
@@ -140,4 +140,39 @@
     background-color: currentColor;
     background-color: transparent;
     border: thick solid currentColor;
+}
+
+
+
+
+
+
+
+
+/** ----------------------------PROPIEDAD OPACITY--------------------------- */
+
+.opacity {
+    background-color: orchid;
+    color: navy;
+    border: thick solid black;
+    opacity: .5;
+    opacity: 1;
+    opacity: 0;
+    opacity: .75;
+}
+
+.opacity-00 {
+    opacity: 0;
+}
+
+.opacity-10 {
+    opacity: 0.1;
+}
+
+.opacity-20 {
+    opacity: 0.2;
+}
+
+.opacity-30 {
+    opacity: 0.3;
 }
