@@ -30,6 +30,11 @@ html {
     background-color: black;
 }
 
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+}
+
 *,
 *::after,
 *::before {
@@ -170,4 +175,33 @@ html {
     background-color: coral;
     width: 50%;
     height: 50%;
+}
+
+
+
+
+
+
+
+
+/** ----------------------------VIEWPORT----------------------------- */
+
+.viewport {
+    background-color: darkcyan;
+    width: 50vw;
+    /* Recuerda que la etiqueta body tiene márgenes por defecto y recuerda que las barras de scroll del navegador también forman parte del viewport */
+    width: 100%;
+    width: 100vw;
+    height: 50vh;
+    height: 100vh;
+    font-size: 5vw;
+    padding: 2vh 2vw;
+}
+
+.vmin,
+.vmax {
+    background-color: darksalmon;
+    width: 50vmax;
+    height: 50vmin;
+    border: thick solid cyan;
 }
