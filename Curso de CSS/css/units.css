@@ -85,6 +85,7 @@ html {
 
 
 /** ----------------------------EMs----------------------------- */
+
 .rems {
     background-color: cadetblue;
     font-size: 24px;
@@ -98,4 +99,28 @@ html {
     margin: .5rem;
     padding: 1rem;
     font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+/** ----------------------------EXs----------------------------- */
+
+.exs {
+    background-color: cadetblue;
+    font-size: 24px;
+    padding: 1ex .5ex;
+    border: 5px solid rebeccapurple;
+}
+
+.ex-child {
+    background-color: salmon;
+    border: thick solid beige;
+    margin: .5ex;
+    padding: 1ex;
+    font-size: 2ex;
 }
