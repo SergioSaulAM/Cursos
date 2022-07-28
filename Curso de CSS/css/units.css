@@ -27,6 +27,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: black;
 }
 
 *,
@@ -138,4 +139,35 @@ html {
     background-color: cadetblue;
     /* border: 5px solid rebeccapurple; */
     width: 10ch;
+}
+
+
+
+
+
+
+
+
+/** ----------------------------PORCENTAJES----------------------------- */
+
+.percentages {
+    background-color: darkkhaki;
+    padding: 5%;
+    margin: 20% 10%;
+    width: 80%;
+    font-size: 100%;
+    height: 100%;
+}
+
+
+.height-parent {
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+}
+
+.height-child {
+    background-color: coral;
+    width: 50%;
+    height: 50%;
 }
