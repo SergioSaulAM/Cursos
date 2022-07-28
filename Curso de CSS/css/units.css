@@ -76,3 +76,26 @@ html {
     padding: 1em;
     font-size: 2em;
 }
+
+
+
+
+
+
+
+
+/** ----------------------------EMs----------------------------- */
+.rems {
+    background-color: cadetblue;
+    font-size: 24px;
+    padding: 1rem .5rem;
+    border: 5px solid rebeccapurple;
+}
+
+.rem-child {
+    background-color: salmon;
+    border: thick solid beige;
+    margin: .5rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
