@@ -124,3 +124,18 @@ html {
     padding: 1ex;
     font-size: 2ex;
 }
+
+
+
+
+
+
+
+
+/** ----------------------------CHs----------------------------- */
+
+.chs {
+    background-color: cadetblue;
+    /* border: 5px solid rebeccapurple; */
+    width: 10ch;
+}
