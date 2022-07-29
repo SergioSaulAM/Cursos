@@ -1,5 +1,11 @@
 /** ---------------------------------VARIABLES Y FUNCIONES EN CSS-----------------------------  */
 
+
+
+
+
+/** ---------------------------------CUSTOM PROPERTIES Y FUNCION VAR()-----------------------------  */
+
 :root {
     color: darkgreen;
     --default-bg-color: skyblue;
@@ -7,6 +13,13 @@
 
 html {
     color: red;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 .custom-props-1 {
@@ -30,4 +43,22 @@ html {
     --primary-color: navy;
     color: var(--primary-color, orange);
     background-color: var(--default-bg-color);
+}
+
+
+
+
+
+
+
+
+/** ---------------------------------FUNCION CALC()-----------------------------  */
+
+.ch-10 {
+    --padding-size: 2ch;
+    --num-ch: 10ch;
+    background-color: var(--default-bg-color);
+    font-size: 2rem;
+    padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size)*2);
 }
