@@ -62,3 +62,27 @@ html {
     padding: var(--padding-size);
     width: calc(var(--num-ch) + var(--padding-size)*2);
 }
+
+
+
+
+
+
+
+
+/** ---------------------------------FUNCION MIN() & MAX()-----------------------------  */
+
+.min-max {
+    background-color: var(--default-bg-color);
+    margin-top: 1rem;
+    width: min(300px, 20vw);
+    height: max(200px, 25vh);
+}
+
+
+
+
+
+
+
+/** ---------------------------------FUNCION CLAMP()-----------------------------  */
