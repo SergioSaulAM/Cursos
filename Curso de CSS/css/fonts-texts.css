@@ -53,9 +53,9 @@
 
 .crescendo {
     font-family: "Crescendo", sans-serif;
-     font-size: 2rem;
+    font-size: 2rem;
 }
-    
+
 @font-face {
     font-family: "Things-Love";
     src: url(../fonts/ThingsLove.woff);
@@ -64,5 +64,19 @@
 
 .things-love {
     font-family: "Things-Love", cursive;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+/** ---------------------------GOOGLE FONTS----------------------- */
+
+.raleway {
+    font-family: "Raleway", sans-serif;
     font-size: 2rem;
 }
