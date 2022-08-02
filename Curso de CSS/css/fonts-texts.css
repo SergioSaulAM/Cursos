@@ -95,8 +95,17 @@
     text-decoration
     text-indent
     text-overflow
+        overflow: hidden;
+        white-space: nowrap;
     text-transform
+
     letter-spacing
+
+    white-space
+
+    word-break
+    word-spacing
+    writing-mode
 */
 
 .text {
