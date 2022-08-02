@@ -22,3 +22,47 @@
     line-height: 2;
     font: italic small-caps bold 24px / 1.5 monospace;
 }
+
+
+
+
+
+
+
+
+/** ---------------------------FUENTES EXTERNAS----------------------- */
+
+/* 
+    Formato woff o woff2 - Web Open Font Format
+
+    font-display: Es una propiedad que nos permite cómo es que va a cargar el texto mientras la tipografía personalizada carga
+        auto - permite que el navegador utilice el método predeterminado que suele ser block
+        block - oculta brevemente el texto hasta que la fuente haya sido cargada por completo
+        swap - indica al navegador que utilice la fuente alternativa para mostrar el texto hasta que la fuente personalizada se haya cargado por completo
+        fallback - es una mezcla entre auto y swap
+        optional - ocultará el texto, luego lo cargará con la fuente alternativa y finalmente aplicará la fuente personalizada
+*/
+
+@font-face {
+    font-family: "Crescendo";
+    src: url(../fonts/Crescendo.woff);
+    /* src: url(../fonts/ThingsLove.woff) format("woff"),
+        url(../fonts/ThingsLove.woff) format("woff2"); */
+    font-display: swap;
+}
+
+.crescendo {
+    font-family: "Crescendo", sans-serif;
+     font-size: 2rem;
+}
+    
+@font-face {
+    font-family: "Things-Love";
+    src: url(../fonts/ThingsLove.woff);
+    font-display: swap;
+}
+
+.things-love {
+    font-family: "Things-Love", cursive;
+    font-size: 2rem;
+}
