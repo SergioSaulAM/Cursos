@@ -76,10 +76,23 @@
 .bg-clip {
     background-color: skyblue;
     background-image: url("../assets/puesta-sol.jpg");
-    background-size: 200px;
     background-repeat: no-repeat;
-    background-clip: border-box;
+    background-size: 200px;
+    background-size: cover;
+    background-clip: border-box; /* Default */
     background-clip: padding-box;
     background-clip: content-box;
+    padding: 1rem;
+}
+
+.bg-origin {
+    background-color: skyblue;
+    background-image: url("../assets/puesta-sol.jpg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-size: cover;
+    background-origin: padding-box; /* Default */
+    background-origin: border-box;
+    background-origin: content-box;
     padding: 1rem;
 }
