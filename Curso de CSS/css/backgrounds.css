@@ -106,4 +106,5 @@
     height: 50vh;
     background-attachment: scroll;
     background-attachment: fixed;
+    /* background: red; */
 }
