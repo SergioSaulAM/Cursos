@@ -44,3 +44,11 @@
     background-size: cover;
     background-size: contain;
 }
+
+.bg-repeat {
+    background-image: url("../assets/puesta-sol.jpg");
+    background-size: 100px;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+}
