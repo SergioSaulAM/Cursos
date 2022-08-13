@@ -108,3 +108,22 @@
     background-attachment: fixed;
     /* background: red; */
 }
+
+.bg-multiple {
+    width: 50%;
+    height: 30vh;
+    background-image: 
+        url("../assets/favicon.png"),
+        url("../assets/puesta-sol.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-size: 10%, cover;
+}
+
+.bg-art {
+    width: 1000px;
+    height: 700px;
+    background: 
+        url("../assets/arbol.png") no-repeat center bottom,
+        url("../assets/aves.png") no-repeat center bottom,
+        url("../assets/cielo.png") no-repeat center top;
+}
