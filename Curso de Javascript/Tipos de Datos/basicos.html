@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos de Javascript</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundamentos de Javascript</title>
-</head>
+  <body>
+    <h1>Fundamentos de Javascript</h1>
+    <script>
+      /* **********     Curso JavaScript: 3. Variables: var 🥊VS🥊 let - #jonmircha     ********** */
 
-<body>
-  <h1>Fundamentos de Javascript</h1>
-  <script>
-    /* **********     Curso JavaScript: 3. Variables: var 🥊VS🥊 let - #jonmircha     ********** */
-
-    /* var hola = "Hola Mundo";
+      /* var hola = "Hola Mundo";
     let hello = "Hello World";
     console.log(hola);
     console.log(hello);
     console.log(window);
     console.log(window.hola);
     console.log(window.hello); */
-    //Ambito de bloque
-    //Esto es un bloque - comentario de una lines
-    /*
+      //Ambito de bloque
+      //Esto es un bloque - comentario de una lines
+      /*
     Esto
     es
     un
@@ -30,8 +29,8 @@
     de
     varias
     líneas */
-    
-    /* console.log ("****************var*****************");
+
+      /* console.log ("****************var*****************");
     var musica = "Rock";
     console.log("Variable Música antes del Bloque", musica);
     {
@@ -48,13 +47,9 @@
     }
     console.log("Variable Música después del Bloque", musica2); */
 
+      /* **********     Curso JavaScript: 4. Constantes (const) - #jonmircha     ********** */
 
-
-
-
-    /* **********     Curso JavaScript: 4. Constantes (const) - #jonmircha     ********** */
-
-    /*  let a;
+      /*  let a;
      const PI = 3.1416;
      //const NUEVE;
      console.log(PI);
@@ -79,13 +74,9 @@
      console.log(objeto);
      console.log(colores); */
 
+      /* **********     Curso JavaScript: 5. Cadenas de Texto (Strings) - #jonmircha     ********** */
 
-
-
-
-    /* **********     Curso JavaScript: 5. Cadenas de Texto (Strings) - #jonmircha     ********** */
-
-    /*let nombre = "Sergio";
+      /*let nombre = "Sergio";
     let apellido = 'Saul';
     let saludo = new String("Hola Mundo");
     let lorem = "      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.     "
@@ -103,13 +94,9 @@
     lorem.split(" "),
     lorem.split(","));*/
 
+      /* **********     Curso JavaScript: 6. Template Strings - #jonmircha     ********** */
 
-
-
-
-    /* **********     Curso JavaScript: 6. Template Strings - #jonmircha     ********** */
-
-    /*let nombre = "Sergio";
+      /*let nombre = "Sergio";
     let apellido = "Acevedo";
     let saludo = "Hola mi nombre es " + nombre + " " + apellido + ".";
     console.log(saludo);
@@ -139,12 +126,9 @@
       ul3 += "</ul>"
     console.log(ul3);*/
 
+      /* **********     Curso JavaScript: 7. Números (Numbers) - #jonmircha     ********** */
 
-
-
-    /* **********     Curso JavaScript: 7. Números (Numbers) - #jonmircha     ********** */
-
-    /*let a = 2;
+      /*let a = 2;
     let b = new Number(1);
     let c = 7.19;
     let d = "5.6";
@@ -162,11 +146,8 @@
     console.log(c + Number.parseInt(d));
     console.log(c + Number.parseFloat(d));*/
 
-
-
-
-    /* **********     Curso JavaScript: 8. Booleans - #jonmircha     ********** */
-    /*let verdadero = true;
+      /* **********     Curso JavaScript: 8. Booleans - #jonmircha     ********** */
+      /*let verdadero = true;
     let falso = false;
     let v = Boolean(true);
     let f = Boolean(false);
@@ -176,13 +157,9 @@
     console.log(Boolean(-7));
     console.log(Boolean(""));*/
 
+      /* **********     Curso JavaScript: 9. undefined, null & NaN - #jonmircha     ********** */
 
-
-
-
-    /* **********     Curso JavaScript: 9. undefined, null & NaN - #jonmircha     ********** */
-
-    /*let indefinida;
+      /*let indefinida;
     console.log(indefinida);
 
     let nulo = null;
@@ -192,21 +169,18 @@
     let noEsUnNumero = "Hola" * 3.7;
     console.log(noEsUnNumero);*/
 
+      /* **********     Curso JavaScript: 10. Funciones - #jonmircha     ********** */
 
-
-
-    /* **********     Curso JavaScript: 10. Funciones - #jonmircha     ********** */
-
-    /*
+      /*
       Una función es un bloque de código, autocontenido, que se puede definir una vez y ejecuta en cualquier momento. Opcionalmente, una función puede aceptar parámetros y devolver un valor.
 
       Las funciones en JavaScript son objetos, un tipo especial de objetos.
 
       Se dice que las funciones son cuidadanos de primera clase porque pueden asignarse a un vallor, y pueden pasarse como argumentos y usarse como un valor de retorno.
     */
-    
-    //Funciones declaradas
-    /*
+
+      //Funciones declaradas
+      /*
     function estoEsUnaFuncion() {
       console.log("Uno");
       console.log("Dos");
@@ -259,9 +233,8 @@
 
 */
 
-
-    /* **********     Curso JavaScript: 11. Arreglos (Arrays) - #jonmircha     ********** */
-    /*
+      /* **********     Curso JavaScript: 11. Arreglos (Arrays) - #jonmircha     ********** */
+      /*
     const a = [];
     console.log(a);
 
@@ -299,20 +272,16 @@
       console.log(`<li id="${index}">${el}</li>`);
     });*/
 
-
-
-
-
-    /* **********     Curso JavaScript: 12. Objetos - #jonmircha     ********** */
-    /*
+      /* **********     Curso JavaScript: 12. Objetos - #jonmircha     ********** */
+      /*
     let a = new String("Hola");
     //console.log(a);
 
     const b = {}
     console.log(b);*/
-  
-    /* Dentro de un objeto a las variables se les llama "Atributos / Propiedades" y a las funciones se les llama "Métodos" */
-/*
+
+      /* Dentro de un objeto a las variables se les llama "Atributos / Propiedades" y a las funciones se les llama "Métodos" */
+      /*
     const saul = {
       nombre: "Saúl",
       apellido: "Acevedo",
@@ -346,7 +315,97 @@
 
     console.log(Object.keys(saul));
     */
-    </script>
-</body>
 
+      /* **********     Curso JavaScript: 13. Tipos de Operadores - #jonmircha     ********** */
+      /* Aritméticos: +, -, *, /, %, () */
+      /* let a = 5 + (5 - 10) * 3;
+    let  modulo = 5 % 2;
+
+    console.log(a);
+    console.log(modulo); */
+
+      /* Relacionales: >, <, >=, <=, ==, ===, !=, !== */
+      /* console.log(8 > 9);
+    console.log(9 > 8);
+    console.log(8 >= 9);
+    console.log(9 >= 8);
+    console.log(7 < 7);
+    console.log(7 <= 7); */
+
+      /* 
+      =   1 Igual es asignación de variable
+      ==  2 Iguales es comparación de valores
+      === 3 Iguales es comparación de tipo de dato y de valor
+    */
+
+      /*
+    console.log(7 == 7);
+    // Aquí se tiene un valor verdadero debido a que a pesar de ser de tipos diferentes, el valor es el mismo y tienden a verdadero (truthy).
+    console.log("7" == 7);
+    // Aquí también es un resultado que tiende a falso (falsy), por eso van a dar falso
+    console.log(0 == false);
+    console.log("-------------------------------");
+    console.log(7 === 7);
+    // Aquí se compara tanto el valor como el tipo de dato, es por eso que da falso
+    console.log("7" === 7);
+    // Aquí se compara tanto el valor como el tipo de dato, es por eso que da falso
+    console.log(0 === false);
+    */
+
+      // Incremento o Decremento
+      // let i = 2;
+
+      /* Aquí se imprime el valor de i primero y después se incrementa la variable en una unidad */
+      //console.log(i++);
+
+      /* Aquí primero se incrementa el valor de i y después se incrementa la variable */
+      //console.log(++i);
+
+      //i = i + 2;
+
+      // Aquí se multiplica el valor de la izquierda por el valor de la derecha.
+      /* 
+      i += 2: El valor de la izquierda se suma con el valor de la derecha.
+      i -= 2: El valor de la izquierda se resta con el valor de la derecha.
+      i *= 2: El valor de la izquierda se multiplica con el valor de la derecha.
+      i /= 2: El valor de la izquierda se divide con el valor de la derecha.
+      i %= 2: El valor de la izquierda se le saca módulo al valor de la derecha.
+    */
+
+      // i %= 3;
+      // console.log(i);
+
+      //Operador unario
+      /* i++;
+    i--;
+    ++i;
+    --i;
+    console.log(i); */
+
+      /* 
+    Lógicos
+      ! - Not: Niega, es decir lo que es verdadero lo vuelve falso y viceversa
+      || - Or: Cuando tengo 2 o más condiciones, con que una se cumpla, es decir sea verdadero, el OR validará.
+      && - And: Cuando tengo 2 o más condiciones, todas tienen que cumplirse, es decir ser verdaderas para que AND se valide
+    */
+
+      /* 
+    // Se cambia de true a false por el operador !
+    console.log(!true);
+
+    // Se cambia de false a true por el operador !
+    console.log(!false);
+
+    // Se es verdadera ya que la condición de (9 === 9) es verdadera y con que una de las dos condiciones se cumpla, el resultado será verdadero
+    console.log((9 === 9) || ("9" === 9));
+
+    // Se es falso ya que se tienen que cumplir las dos condiciones por el operador && y como una sí se cumple (9 === 9) pero el ("9" === 9) no se cumple, por eso el resultado será falso.
+    console.log((9 === 9) && ("9" === 9));
+    
+    // Se es falso ya que se tienen que cumplir las dos condiciones por el operador && y como una sí se cumple (9 === 9) pero el ("9" === "9") no se cumple, por eso el resultado será falso.
+    console.log((9 === 9) && ("9" === "9"));
+    
+    */
+    </script>
+  </body>
 </html>
