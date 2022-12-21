@@ -709,6 +709,68 @@
     // });
 
     numeros.forEach((el, index) => console.log(`${el} está en posición ${index}`)); */
+
+
+    // ------------ PROTOTIPOS ------------
+    // const caricatura = {
+    //   nombre: "Snoopy",
+    //   saludar() {
+    //     console.log("Hola, soy snoopy");
+    //   }
+    // }
+
+    // const caricatura2 = {
+    //   nombre: "Lola Bunny",
+    //   saludar() {
+    //     console.log("Hola, soy Lola Bunny");
+    //   }
+    // }
+    
+    // console.log(caricatura);
+    // console.log(caricatura2);
+    
+    
+    // Función constructora
+    /* function Caricatura(nombre, genero) {
+      //Atributos
+      this.nombre = nombre;
+      this.genero = genero;
+      
+      //Métodos
+      this.sonar = function () {
+        console.log("* Emitiendo sonido *");
+      }
+
+      this.saludar = function () {
+        console.log(`Hola, soy ${this.nombre}`);
+      }
+    } */
+
+    // Función constructora donde asignamos los métodos al Prototipo, no a la función como tal.
+    function Caricatura(nombre, genero) {
+      //Atributos
+      this.nombre = nombre;
+      this.genero = genero;  
+    }
+    
+    // Métodos agregados al prototipo de la función constructora
+    //Métodos
+    Caricatura.prototype.sonar = function () {
+      console.log("* Emitiendo sonido *");
+    }
+
+    Caricatura.prototype.saludar = function () {
+      console.log(`Hola, soy ${this.nombre}`);
+    }
+    const snoopy = new Caricatura("Snoopy", "Macho"), lolaBunny = new Caricatura("Lola Bunny", "Hembra");
+    console.log(snoopy);
+    console.log(lolaBunny);
+
+    snoopy.saludar();
+    snoopy.sonar();
+
+    lolaBunny.sonar();
+    lolaBunny.saludar();
     </script>
   </body>
 </html>
