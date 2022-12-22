@@ -407,7 +407,7 @@
     
     */
 
-   /* 
+      /* 
       If-Else
       let edad = 17;
 
@@ -505,11 +505,6 @@
           break;
       } */
 
-
-
-
-
-
       // Bucles
 
       // let contador = 0;
@@ -520,7 +515,6 @@
       //   contador++;
       // }
 
-
       // do-while
       // do {
       //   console.log(`do while: ${contador}`);
@@ -530,14 +524,11 @@
       //   console.log(`For: ${i}`);
       // }
 
-
       // for
       // let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
       // for (let i = 0; i < numeros.length; i++) {
       //   console.log(numeros[i]);
       // }
-
-
 
       //forin
       // const saul = {
@@ -549,16 +540,11 @@
       //     console.log(`Key: ${key}, Value: ${saul[key]}`);
       // }
 
-
-
       // forof
       // let caracter = "Hola Mundo";
       // for (const item of caracter) {
       //     console.log(item);
       // }
-
-
-
 
       // try-catch
       /* try {
@@ -579,9 +565,6 @@
       } catch (error) {
         console.log(`Se produjo un error ${error}`);
       } */
-
-
-
 
       //break & continue
 
@@ -607,9 +590,7 @@
         console.log(i);        
       } */
 
-
-
-/* 
+      /* 
       // Deconstrucción de arreglo
       const numeros = [1,2,3];
       let [one, two, three] = numeros;
@@ -624,7 +605,6 @@
       }
       let {nombre, apellido, edad} = persona;
       console.log(nombre, apellido, edad); */
-
 
       /* // Objetos literales
 
@@ -649,7 +629,7 @@
 
       console.log(dog); */
 
-/*   //------------- PARÁMETROS REST ----------------
+      /*   //------------- PARÁMETROS REST ----------------
       function sumar(a, b, ...c) {
           let resultado = a + b;
           c.forEach(function(n) {
@@ -671,27 +651,23 @@
     const arr3 = [...arr1, ...arr2];
     console.log(arr3); */
 
-
-
-
-
-    //-------------- ARROW FUNCTIONS -----------
-    /* const saludar = () => {
+      //-------------- ARROW FUNCTIONS -----------
+      /* const saludar = () => {
       console.log(`Hola`);
     } 
     saludar();
     */
-    /* const saludar = () => console.log(`Hola`);
+      /* const saludar = () => console.log(`Hola`);
     saludar();
      */
-    // const saludar = (nombre = "Indefinido") => console.log(`Hola ${nombre}`);
-    /* const saludar = nombre => console.log(`Hola ${nombre}`);
+      // const saludar = (nombre = "Indefinido") => console.log(`Hola ${nombre}`);
+      /* const saludar = nombre => console.log(`Hola ${nombre}`);
     saludar("Saúl"); */
 
-    /* const sumar = function (a,b) {
+      /* const sumar = function (a,b) {
       return a + b;
     } */
-    /* const sumar = (a,b) => a + b;
+      /* const sumar = (a,b) => a + b;
     console.log(sumar(3,4));
 
 
@@ -710,7 +686,7 @@
 
     numeros.forEach((el, index) => console.log(`${el} está en posición ${index}`)); */
 
-/* 
+      /* 
     // ------------ PROTOTIPOS ------------
     // const caricatura = {
     //   nombre: "Snoopy",
@@ -797,7 +773,49 @@
 
     lolaBunny.sonar();
     lolaBunny.saludar(); */
- 
+
+      class Caricatura {
+        // El constructor es un método especial que se ejecuta en el momento de instanciar una clase.
+        constructor(nombre, genero) {
+          this.nombre = nombre;
+          this.genero = genero;
+        }
+
+        sonar() {
+          console.log("* Emitiendo sonido *");
+        }
+
+        saludar() {
+          console.log(`Hola, soy ${this.nombre}`);
+        }
+      }
+
+      class Perro extends Caricatura {
+        constructor(nombre, genero, tamanio) {
+          // Con el método super() se manda a llamar el constructor de la clase padre.
+          super(nombre, genero);
+          this.tamanio = tamanio;
+        }
+        sonar() {
+          console.log("Soy un perro y mi sonido es un ladrido.");
+        }
+        
+        ladrar() {
+          console.log("Guauu Guauu!!!");
+        }
+      }
+
+      const mimi = new Caricatura("Mimí", "Hembra");
+      const scooby = new Perro("Scooby", "Macho", "Gigante");
+  
+      console.log(mimi);
+      mimi.saludar();
+      mimi.sonar();
+      
+      console.log(scooby);
+      scooby.saludar();
+      scooby.sonar();
+      scooby.ladrar();
     </script>
   </body>
 </html>
