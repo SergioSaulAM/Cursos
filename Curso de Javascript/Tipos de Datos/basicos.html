@@ -710,7 +710,7 @@
 
     numeros.forEach((el, index) => console.log(`${el} está en posición ${index}`)); */
 
-
+/* 
     // ------------ PROTOTIPOS ------------
     // const caricatura = {
     //   nombre: "Snoopy",
@@ -731,20 +731,20 @@
     
     
     // Función constructora
-    /* function Caricatura(nombre, genero) {
-      //Atributos
-      this.nombre = nombre;
-      this.genero = genero;
+    // function Caricatura(nombre, genero) {
+    //   //Atributos
+    //   this.nombre = nombre;
+    //   this.genero = genero;
       
-      //Métodos
-      this.sonar = function () {
-        console.log("* Emitiendo sonido *");
-      }
+    //   //Métodos
+    //   this.sonar = function () {
+    //     console.log("* Emitiendo sonido *");
+    //   }
 
-      this.saludar = function () {
-        console.log(`Hola, soy ${this.nombre}`);
-      }
-    } */
+    //   this.saludar = function () {
+    //     console.log(`Hola, soy ${this.nombre}`);
+    //   }
+    // }
 
     // Función constructora donde asignamos los métodos al Prototipo, no a la función como tal.
     function Caricatura(nombre, genero) {
@@ -762,15 +762,42 @@
     Caricatura.prototype.saludar = function () {
       console.log(`Hola, soy ${this.nombre}`);
     }
-    const snoopy = new Caricatura("Snoopy", "Macho"), lolaBunny = new Caricatura("Lola Bunny", "Hembra");
+
+
+    // Herencia prototípica
+
+    function Perro(nombre, genero, tamanio) {
+      this.super = Caricatura;
+      this.super(nombre, genero);
+      this.tamanio = tamanio;
+    }
+
+    // Perro está heredando de caricatura.
+    // Ya no se pasan parámetros porque ya en la función constructora en la función super() ya se están pasando dichos parámetros.
+    Perro.prototype = new Caricatura();
+    // Con esta línea ya estamos heredando las propiedades de Caricatura a Perro
+    Perro.prototype.constructor = Perro;
+
+    // Sobreescritura de métodos del prototipo padre en el hijo.
+    Perro.prototype.sonar = function() {
+      console.log("Soy un perro y mi sonido es un ladrido.");
+    }
+
+    Perro.prototype.ladrar = function () {
+      console.log("Guauuu Guauuu");
+    }
+
+    const snoopy = new Perro("Snoopy", "Macho", "Mediano"), lolaBunny = new Caricatura("Lola Bunny", "Hembra");
     console.log(snoopy);
     console.log(lolaBunny);
 
     snoopy.saludar();
     snoopy.sonar();
+    snoopy.ladrar();
 
     lolaBunny.sonar();
-    lolaBunny.saludar();
+    lolaBunny.saludar(); */
+ 
     </script>
   </body>
 </html>
