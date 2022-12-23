@@ -774,6 +774,7 @@
     lolaBunny.sonar();
     lolaBunny.saludar(); */
 
+      // -------------- CLASES -----------------
       class Caricatura {
         // El constructor es un método especial que se ejecuta en el momento de instanciar una clase.
         constructor(nombre, genero) {
@@ -795,6 +796,7 @@
           // Con el método super() se manda a llamar el constructor de la clase padre.
           super(nombre, genero);
           this.tamanio = tamanio;
+          this.raza = null;
         }
         sonar() {
           console.log("Soy un perro y mi sonido es un ladrido.");
@@ -803,7 +805,22 @@
         ladrar() {
           console.log("Guauu Guauu!!!");
         }
+
+        static queEres() {
+          console.log("Los perros somos animales mamíferos que pertenecemos a la familia de los caninos. Somos considerados los mejores amigos del hombre.");
+        }
+
+        // Los setters y getters son métodos especiales que nos permiten establecer y obtener los valores de atributos de nuestra clase.
+        get getRaza() {
+          return this.raza;
+        }
+
+        set setRaza(raza) {
+          this.raza = raza;
+        }
       }
+
+      Perro.queEres(); 
 
       const mimi = new Caricatura("Mimí", "Hembra");
       const scooby = new Perro("Scooby", "Macho", "Gigante");
@@ -816,6 +833,9 @@
       scooby.saludar();
       scooby.sonar();
       scooby.ladrar();
+      console.log(scooby.getRaza)
+      scooby.setRaza = "Gran Danés";
+      console.log(scooby.getRaza)
     </script>
   </body>
 </html>
