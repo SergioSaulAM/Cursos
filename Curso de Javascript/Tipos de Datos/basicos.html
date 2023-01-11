@@ -775,7 +775,7 @@
     lolaBunny.saludar(); */
 
       // -------------- CLASES -----------------
-      class Caricatura {
+/*       class Caricatura {
         // El constructor es un método especial que se ejecuta en el momento de instanciar una clase.
         constructor(nombre, genero) {
           this.nombre = nombre;
@@ -835,7 +835,80 @@
       scooby.ladrar();
       console.log(scooby.getRaza)
       scooby.setRaza = "Gran Danés";
-      console.log(scooby.getRaza)
+      console.log(scooby.getRaza);
+ */
+
+      
+      console.log(console);
+      console.error("Esto es un error");     
+      console.warn("Esto es un aviso");
+      console.info("Esto es un mensaje informativo");
+      let nombre = "Saul", edad = 20, apellido = "Acevedo";
+      console.log(nombre);
+      console.log(apellido);
+      console.log(edad);
+      console.log(nombre, apellido, edad);
+      console.log(`Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años.`);
+      console.log(`Hola mi nombre es %s %s y tengo %d años.`, nombre, apellido, edad);
+      console.clear();
+
+
+      console.log(window);
+      console.log(document);
+      console.dir(window);
+      console.dir(document);
+      console.clear();
+
+      console.group("Los cursos de @jonmircha en YouTube");
+      console.log("Curso de JavaScript");
+      console.log("Curso de Node.js");
+      console.log("Curso de PWAs");
+      console.log("Curso de Flexbox");
+      console.log("Curso de Diseño y Programación Web");
+      console.groupEnd();
+
+
+      console.groupCollapsed("Los cursos de @jonmircha en YouTube");
+      console.log("Curso de JavaScript");
+      console.log("Curso de Node.js");
+      console.log("Curso de PWAs");
+      console.log("Curso de Flexbox");
+      console.log("Curso de Diseño y Programación Web");
+      console.groupEnd();
+
+      console.clear();
+      console.table(Object.entries(console).sort());
+      const numeros = [1,2,3,4,5], vocales = ["a","e","i","o","u"];
+      console.table(numeros);
+      console.table(vocales);
+
+      const perro = {
+        nombre: "Bonny",
+        raza: "Boxer",
+        color: "Café"
+      }
+      console.table(perro);
+
+      console.clear();
+      console.time('Cuánto tiempo tarda mi código');
+      const arreglo = Array(1000000);
+
+      for (let i = 0; i < arreglo.length; i++) {
+        arreglo[i] = i; 
+      }
+      console.timeEnd('Cuánto tiempo tarda mi código');
+      console.clear();
+
+      for (let i = 0; i <= 100; i++) {
+        console.count("Código for");
+        console.log(i);
+      }
+ 
+      console.clear();
+ 
+      let x = 1, y = 2, pruebaXY = "Se espera que X siempre sea menor que Y";
+      console.assert(x < y, {x,y});
+
     </script>
   </body>
 </html>
