@@ -1032,6 +1032,24 @@
       console.log(aviso);
  */
 
+     // ------------------- EXPRESIONES REGULARES -------------------- 
+     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
+     let cadena = "Lorem 10 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut lorem ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+     let expReg = new RegExp("lorem", "ig");
+//     let expReg2 = /lorem/ig; 
+//     let expReg2 = /lorem/ig; 
+//     let expReg2 = /[0-9]/ig; 
+//     let expReg2 = /lorem{1}/ig; 
+     let expReg2 = /lorem{1,3}/ig; 
+
+     console.log(expReg.test(cadena));
+     console.log(expReg.exec(cadena));
+
+     console.log(expReg2.test(cadena));
+     console.log(expReg2.exec(cadena));
+
+
     </script>
   </body>
 </html>
