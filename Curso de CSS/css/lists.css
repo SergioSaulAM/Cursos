@@ -39,3 +39,19 @@
     list-style: lower-latin url("../assets/cielo.png") inside;
     list-style: lower-latin inside;
 }
+
+.text-column-4 {
+    column-count: 4;
+    column-gap: 1rem;
+    list-style-position: inside;
+    column-rule: thin dotted red;
+    column-width: 100px; /* Tamaño mínimo de anchura de las columnas */
+}
+
+
+.text-column-3 {
+    column-count: 4;
+    column-gap: 1rem;
+    column-rule: thin solid gray;
+    column-width: 100px; /* Tamaño mínimo de anchura de las columnas */
+}
