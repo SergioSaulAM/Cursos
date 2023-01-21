@@ -1032,6 +1032,7 @@
       console.log(aviso);
  */
 
+ /* 
      // ------------------- EXPRESIONES REGULARES -------------------- 
      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
@@ -1048,6 +1049,42 @@
 
      console.log(expReg2.test(cadena));
      console.log(expReg2.exec(cadena));
+ */
+
+    // ------------------------- FUNCIÓN ANÓNIMA AUTOEJECUTABLE ---------------------
+
+    (function () {
+        console.log("Mi primer IIFE");
+    })();
+
+    (function (d, w, c) {
+        console.log("Mi segundo IIFE");
+        console.log(d);
+        console.log(w);
+        c.log("Esto es un console.log");
+    })(document, window, console);
+
+    // Formas de escribir las funciones Anónimas Autoejecutables
+
+    //Clásica
+    (function () {
+      console.log("Versión Clásica");
+    })();
+
+    //La Crockford (JavaScript: The God Parts)
+    ((function () {
+      console.log('Versión Crockford');
+    })());
+
+    //Unaria    
+    +function () {
+      console.log('Versión Unaria');
+    }();
+
+    //Facebook
+    !function () {
+      console.log('Versión Facebook');
+    }();
 
 
     </script>
