@@ -65,4 +65,13 @@ const eliminaPatron = (cadena = "", pat = "") => {
     return console.log(cadena);
 }
 
-eliminaPatron("xyz1, xyz2, xyz3, xyz4, xyz5", "xyz");
+const eliminarCaracteres = (cadena = "", pat = "") => {
+    if(typeof cadena !== 'string' || typeof pat !== 'string') return console.error('Error!! Ingresó como parámetro un valor diferente a una cadena.');
+
+    if (cadena === "" || pat === "") return console.warn('No ingresó un parámetro.');
+
+    return console.log(cadena.replace(new RegExp(pat, "ig"), ""));
+}
+
+eliminaPatron("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
+eliminarCaracteres("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz");
