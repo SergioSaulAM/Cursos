@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nuevos Tipos de Datos en JavaScript</h1>
+    
+    <script>
+        // ===================== SYMBOLS =======================
+        let id = Symbol("id");
+        let id2 = Symbol("id2");
+
+        console.log(id === id2);
+        console.log(id, id2);
+        console.log(typeof id, typeof id2);
+
+        const NAME = Symbol("Nombre");
+        const SALUDAR = Symbol("Saludar");
+
+        const persona = {
+            [NAME]: "Saul",
+            edad: 21
+        }
+
+        console.log(persona);
+
+        persona.NAME = "Sergio Saúl";
+        console.log(persona);
+        console.log(persona.NAME);
+        console.log(persona[NAME]);
+        
+        persona[SALUDAR] = function () {
+            console.log("Hola");
+        };
+        console.log(persona);
+        persona[SALUDAR]();
+
+        for (const propiedad in persona) {
+            console.log(`${propiedad}: ${persona[propiedad]}`);
+        }
+
+    </script>
+</body>
+</html>
