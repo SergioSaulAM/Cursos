@@ -46,11 +46,11 @@
         */
         
        // ===================== SYMBOLS =======================
-        
+       /* 
         const set = new Set([1,2,3,3,true,false,false,{},{},"hola","HOLA"]);
         console.log(set);
         console.log(set.size);
-
+        
         const set2 = new Set();
         set2.add(1);
         set2.add(2);
@@ -60,7 +60,7 @@
         set2.add(false);
         set2.add(2);
         set2.add({});
-
+        
         console.log(set2);
         console.log(set2.size);
 
@@ -68,7 +68,7 @@
         for (const item of set) {
             console.log(`${item}`);
         }
-        
+
         console.log("Recorriendo Set2");
         set2.forEach(item => {
             console.log(item);
@@ -88,7 +88,47 @@
 
         set2.clear();
         console.log(set2);
+        */
+        
+        
+        // ===================== MAPS =======================
+        /* 
+        let mapa = new Map();
+        mapa.set("Nombre", "Saul");
+        mapa.set("Apellido", "Acevedo");
+        mapa.set("Edad", 21);
+        
+        console.log(mapa);
+        console.log(mapa.size);
+        console.log(mapa.has("correo"));
+        console.log(mapa.has("Nombre"));
+        console.log(mapa.get("Nombre"));
+        mapa.set("Nombre", "Sergio")
+        console.log(mapa.get("Nombre"));
+        
+        mapa.delete("Apellido");
+        console.log(mapa);
 
+        for (const [key, value] of mapa) {
+            console.log(`Llave: ${key}, Valor: ${value}`);
+        }
+
+        const mapa2 = new Map([
+            ["Nombre", "Pumba"],
+            ["Edad", 1],
+            ["Animal", "Perro"]
+        ]);
+
+        console.log(mapa2);
+
+        const llavesMapa2 = [...mapa2.keys()];
+        const valoresMapa2 = [...mapa2.values()];
+
+        console.log(llavesMapa2);
+        console.log(valoresMapa2);
+         */
+
+        
     </script>
 </body>
 </html>
