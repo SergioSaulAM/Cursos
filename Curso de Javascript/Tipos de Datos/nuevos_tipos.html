@@ -171,7 +171,7 @@
             ["Edad", 1],            ❌❌
             ["Animal", "Perro"]
         ]); */
-        
+        /* 
         const wm = new WeakMap();
         let llave1 = {};        
         let llave2 = {};        
@@ -204,7 +204,36 @@
             llave2 = null;
             llave3 = null;
         }, 500);
+         */
+
         
-        </script>
+        // ===================== ITERABLES & ITERATORS =======================
+        
+        //const iterable = [1,2,3,4,5]
+        //const iterable = "Hola Mundo";
+        //const iterable = new Set([1,2,3,3,5,3,4,5,6]);
+        const iterable = new Map([["Nombre", "Sergio"], ["Edad", 21]]);
+
+        // 👇 Accedemos al iterador de nuestra variable iterable (Array llamado "iterable"); 👇
+        const iterador = iterable[Symbol.iterator]();
+        
+        console.log(iterable);
+        console.log(iterador);
+
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+
+        let next = iterador.next();
+
+        while (!(next.done)) {
+            console.log(next.value);
+            next = iterador.next();
+        }
+        
+    </script>
 </body>
 </html>
