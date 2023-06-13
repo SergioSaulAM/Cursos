@@ -208,7 +208,7 @@
 
         
         // ===================== ITERABLES & ITERATORS =======================
-        
+/*         
         //const iterable = [1,2,3,4,5]
         //const iterable = "Hola Mundo";
         //const iterable = new Set([1,2,3,3,5,3,4,5,6]);
@@ -233,7 +233,60 @@
             console.log(next.value);
             next = iterador.next();
         }
+
+ */
         
+        // ===================== GENERATORS =======================
+
+        function* iterable () {
+            yield "hola";
+            console.log("Hola Consola");
+            yield "hola 2";
+            console.log("Seguimos con más instrucciones de nuestro código");
+            yield "hola 3";
+            yield "hola 4";
+        }
+
+        let iterador = iterable();
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+        //console.log(iterador.next());
+
+        for (const y of iterador) {
+            console.log(y);
+        }
+
+        const arr = [...iterable()];
+        console.log(arr);
+
+        function cuadrado(value) {
+            setTimeout(() => {
+                console.log({
+                    value,
+                    resultado: value * value
+                });
+            }, Math.random() * 1000);
+        }
+
+        function* generador () {
+            console.log("Inicia Generator");
+            yield cuadrado(0);
+            yield cuadrado(1);
+            yield cuadrado(2);
+            yield cuadrado(3);
+            yield cuadrado(4);
+            yield cuadrado(5);
+            console.log("Termina Generator");
+        }
+
+        let gen = generador();
+
+        for (const y of gen) {
+            console.log(y);
+        }
+
     </script>
 </body>
 </html>
