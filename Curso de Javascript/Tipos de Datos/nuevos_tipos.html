@@ -289,7 +289,7 @@
  */
 
         // ===================== PROXIES =======================
-        
+        /* 
         //Objeto base
         const persona = {
             nombre: "",
@@ -325,7 +325,26 @@
         console.log(victor);
 
         console.log(persona);
-        
+         */
+
+
+        // ===================== PROPIEDADES DINÁMICAS DE LOS OBJETOS =======================
+
+        let aleatorio = Math.round(Math.random()*100 + 5);
+
+        const objUsuarios = {
+            propiedad: "Valor",
+            [`id_${aleatorio}`]: "Valor Aleatorio"
+        }
+        console.log(objUsuarios);
+
+        const usuarios = ["Sergio", "Luis", "Victor", "Josué", "David"]
+        usuarios.forEach((usuario, index) => {
+            objUsuarios[`id_${index}`] = usuario;
+        });
+
+        console.log(objUsuarios);
+
     </script>
 </body>
 </html>
