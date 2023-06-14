@@ -45,7 +45,7 @@
         }
         */
         
-       // ===================== SYMBOLS =======================
+        // ===================== SETS =======================
         /* 
         const set = new Set([1,2,3,3,true,false,false,{},{},"hola","HOLA"]);
         console.log(set);
@@ -237,7 +237,7 @@
  */
         
         // ===================== GENERATORS =======================
-
+/* 
         function* iterable () {
             yield "hola";
             console.log("Hola Consola");
@@ -286,7 +286,46 @@
         for (const y of gen) {
             console.log(y);
         }
+ */
 
+        // ===================== PROXIES =======================
+        
+        //Objeto base
+        const persona = {
+            nombre: "",
+            apellido: "",
+            edad: 0
+        }
+        console.log(persona);
+
+        const manejador = {
+            set(objeto, propiedades, valor) {
+                if (Object.keys(objeto).indexOf(propiedades) === -1) {
+                    return console.error(`La propiedad "${propiedades}" no existe en el objeto persona.`);
+                }
+
+                if ((propiedades === "nombre" || propiedades === "apellido") && !(/^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/g.test(valor))) {
+                    console.error(`La propiedad "${propiedades}" solo acepta letras y espacios en blanco.`);
+                }
+                objeto[propiedades] = valor;
+            }
+        }
+
+        const sergio = new Proxy(persona, manejador);
+        sergio.nombre = "Sergio";
+        sergio.apellido = "Acevedo";
+        sergio.edad = 35;
+        sergio.instagram = "@serch_acevedo"
+        console.log(sergio);
+
+        const victor = new Proxy(persona, manejador);
+        victor.nombre = "Victor";
+        victor.apellido = "Méndez";
+        victor.edad = 17;
+        console.log(victor);
+
+        console.log(persona);
+        
     </script>
 </body>
 </html>
