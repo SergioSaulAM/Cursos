@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this en JavaScript</title>
+</head>
+<body>
+    <h1>this en JavaScript</h1>
+
+    <script>
+
+        // ======================== THIS =======================
+
+        console.log(this);
+        console.log(window);
+        console.log(this === window);
+
+        this.nombre = "Contexto Global";
+        console.log(this.nombre);
+
+        function imprimir() {
+            console.log(this.nombre);
+        }
+
+        imprimir();
+
+        const obj = {
+            nombre: "Contexto Objeto",
+            imprimir: function() {
+                console.log(this.nombre);
+            }
+        }
+        obj.imprimir();
+
+        const obj2 = {
+            nombre: "Contexto Objeto 2",
+            imprimir //Este imprimir hace referencia a la función imprimir() del contexto global. Se imprime nombre del obj2 porque se imprime this.nombre pero ya se hace referencia al contexto del obj2
+        }
+        obj2.imprimir();
+
+        const obj3 = {
+            nombre: "Contexto Objeto 3",
+            imprimir:() => { //Esta función imprime el this.nombre del objeto Window porque la Arrow Function mantiene ese enlace del contexto en el que fue creado.
+                console.log(this.nombre);
+            }
+        }
+        obj3.imprimir();
+        
+
+        function Persona(nombre) {
+            this.nombre = nombre;
+            //return console.log(this.nombre);
+            //return function () {
+                //console.log(this.nombre);  //Se imprime el this.nombre del objeto Window debido a que esta función anónima debido a que no se le pasó una propiedad nombre y por eso se regresa al contexto global del this.nombre del objeto Window.
+            //}
+            return () => {
+                console.log(this.nombre);
+            }
+        }
+        let sergio = new Persona("Saúl");
+        sergio();
+        
+        
+    </script>
+</body>
+</html>
