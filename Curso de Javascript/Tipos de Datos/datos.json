@@ -1,0 +1,16 @@
+{
+    "cadena": "Sergio",
+    "numero": 21,
+    "booleano": true,
+    "arreglo": 
+    [
+        "tocar batería",
+        "leer",
+        "programar"
+    ],
+    "objeto": {
+        "facebook":"usuario_usuario",
+        "mail":"correo@correo.com"
+    },
+    "nulo": null
+}

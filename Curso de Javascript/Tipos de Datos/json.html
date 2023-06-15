@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON JavaScript Object Notation</title>
+</head>
+<body>
+    <h1>JavaScript Object Notation</h1>
+
+    <script>
+        const json = {
+            cadena: "Sergio",
+            numero: 21,
+            booleano: true,
+            arreglo: ["tocar batería", "leer", "programar"],
+            objeto: {
+                facebook: "usuario_usuario",
+                mail: "correo@correo.com"
+            },
+            nulo: null
+        }
+        console.log(json);
+        console.log(JSON);
+        console.log("{}");
+        console.log(JSON.parse("{}"));
+        console.log(JSON.parse("[1,2,3]"));
+        console.log(JSON.parse("true"));
+        console.log(JSON.parse("23"));
+        console.log(JSON.parse('"Hola Mundo"'));
+        console.log(JSON.parse("null"));
+        //console.log(JSON.parse("undefined"));
+        
+        console.log(JSON.stringify({}));
+        console.log(JSON.stringify("Hola Mundo Stringify"));
+        console.log(JSON.stringify([1,2,3]));
+        console.log(JSON.stringify(true));
+        console.log(JSON.stringify(false));
+        console.log(JSON.stringify(null));
+        console.log(JSON.stringify({x:2, y:3}));
+        console.log(JSON.stringify(json));
+        console.log(JSON.parse('{"cadena":"Sergio","numero":21,"booleano":true,"arreglo": ["tocar batería","leer","programar"],"objeto": {"facebook":"usuario_usuario","mail":"correo@correo.com"},"nulo":null} '));
+
+    </script>
+</body>
+</html>
