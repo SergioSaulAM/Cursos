@@ -11,7 +11,7 @@
     <script>
 
         // ======================== THIS =======================
-
+/* 
         console.log(this);
         console.log(window);
         console.log(this === window);
@@ -60,7 +60,43 @@
         }
         let sergio = new Persona("Saúl");
         sergio();
-        
+ */        
+
+        // ======================== CALL, APPLY, BIND =======================
+
+        console.log(this);
+
+        this.lugar = "Contexto Global";
+        function saludar(saludo, aQuien) {
+            console.log(`${saludo} ${aQuien} desde ${this.lugar}`);
+        }
+        saludar("Hola", "Pumba");
+
+        const obj = {
+            lugar: "Contexto Objeto"
+        }
+
+        saludar.call(obj, "Hola", "Saul");
+        saludar.call(null, "Hola", "Saul");
+        saludar.call(this, "Hola", "Saul");
+        saludar.apply(obj, ["Adios", "Sergio"]);
+        saludar.apply(null, ["Adios", "Sergio"]);
+        saludar.apply(this, ["Adios", "Sergio"]);
+
+        this.nombre = "Window";
+
+        const persona = {
+            nombre: "Victor",
+            saludar: function () {
+                console.log(`Hola ${this.nombre}`);
+            }
+        }
+        persona.saludar();
+
+        const otraPersona = {
+            saludar: persona.saludar.bind(this)
+        }
+        otraPersona.saludar();
         
     </script>
 </body>
