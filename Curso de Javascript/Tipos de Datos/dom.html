@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM: Document Object Model</title>
+</head>
+<body>
+    <h1>WEB API's</h1>
+    <h2>DOM: Document Object Model</h2>
+    <h2>BOM: Browser Object Model</h2>
+    <h2>CSSOM: CSS Object Model</h2>
+    <h2>WEB APIs</h2>
+    <ul>
+        <li>Eventos</li>
+        <li>Forms</li>
+        <li>AJAX - Fetch</li>
+        <li>History</li>
+        <li>Web Storage</li>
+        <li>Geolocation</li>
+        <li>Drag & Drop</li>
+        <li>Indexed DB</li>
+        <li>Canvas</li>
+        <li>MatchMedia</li>
+        <li>etc..</li>
+    </ul>
+
+
+    <script>
+        console.log(window);
+        console.log(document);
+
+        // Código para hacer hablar un texto.
+        let texto = "Hola Papá, comprame una PlayStation 5";
+        const hablar = (texto) => {
+            speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+        }
+        hablar(texto);
+    </script>
+</body>
+</html>
