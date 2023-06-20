@@ -34,7 +34,7 @@ document.write("<h2>Hola Mundo desde el DOM</h2>");
 
 // ========================= DOM: NODOS, ELEMENTOS Y SELECTORES ===========================
 //Nodos: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-
+/* 
 // MÉTODOS CASI NO UTILIZABLES
 console.log(document.getElementsByTagName("li"));
 console.log(document.getElementsByClassName("card")); //No es necesario poner el punto
@@ -57,3 +57,35 @@ document.querySelectorAll(".card").forEach(el => {
 
 console.log(document.querySelectorAll(".card")[2]);
 console.log(document.querySelectorAll("#menu li")[3]);
+ */
+
+
+// ========================= DOM: ATRIBUTOS Y DATA-ATTRIBUTES ===========================
+
+console.log(document.documentElement.lang);
+console.log(document.documentElement.getAttribute("lang"));
+console.log(document.querySelector(".link-dom").href);
+console.log(document.querySelector(".link-dom").getAttribute("href"));
+
+document.documentElement.lang = "en";
+console.log(document.documentElement.getAttribute("lang"));
+document.documentElement.setAttribute("lang", "es-mx");
+console.log(document.documentElement.getAttribute("lang"));
+
+const $linkDOM = document.querySelector(".link-dom");
+$linkDOM.setAttribute("target","_blank");
+$linkDOM.setAttribute("rel","noopener");
+$linkDOM.setAttribute("href","https://youtube.com/jonmircha");
+console.log($linkDOM.hasAttribute("rel"));
+$linkDOM.removeAttribute("rel");
+console.log($linkDOM.hasAttribute("rel"));
+
+//Data-Attributes
+console.log($linkDOM.getAttribute("data-description"));
+console.log($linkDOM.dataset);
+console.log($linkDOM.dataset.description);
+$linkDOM.setAttribute("data-description", "Modelo de Objeto del Documento");
+console.log($linkDOM.dataset.description);
+$linkDOM.dataset.description = "JavaScript";
+console.log($linkDOM.dataset.description);
+console.log($linkDOM.hasAttribute("data-id"));
