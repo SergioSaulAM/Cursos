@@ -15,11 +15,12 @@ html {
     margin: auto;
     width: 200px;
     height: 200px;
+    margin-bottom: 5rem;
 }
 
 /** ----------------------------BOX-SHADOW----------------------------- */
 
-.box-shadow {
+.shadows {
     color: navy;
 	/* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
     box-shadow: 1rem 1rem 1rem 1rem;
@@ -31,9 +32,23 @@ html {
 
 /** ----------------------------TEXT-SHADOW----------------------------- */
 
-.box-shadow {
+.shadows {
     font-size: 2rem;
     text-align: center;
     /* text-shadow: mov-x mov-y blur-radius color; */
     text-shadow: -1rem -1rem 0.5rem hotpink;
 }
+
+/** -------------------------SOMBRAS MÚLTIPLES-------------------------- */
+
+.shadows-multiple {
+    font-size: 2rem;
+    text-align: center;
+    
+    /* Sombras Múltiples de Caja */
+    box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #f00 inset, -.5rem -.5rem 0.5rem 2rem hotpink;
+
+    /* Sombras Múltiples de Texto */
+    text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem .5rem greenyellow;
+}
+
