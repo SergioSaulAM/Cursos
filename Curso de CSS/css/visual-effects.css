@@ -28,3 +28,12 @@ html {
     box-shadow: 1rem 1rem 1rem 1rem #f00 inset;
     box-shadow: 1rem 1rem 2rem 0.5rem #0007;
 }
+
+/** ----------------------------TEXT-SHADOW----------------------------- */
+
+.box-shadow {
+    font-size: 2rem;
+    text-align: center;
+    /* text-shadow: mov-x mov-y blur-radius color; */
+    text-shadow: -1rem -1rem 0.5rem hotpink;
+}
