@@ -11,8 +11,20 @@ html {
 }
 
 .box {
-    border: thin solid #000;
+    border: thick solid #000;
     margin: auto;
     width: 200px;
     height: 200px;
+}
+
+/** ----------------------------BOX-SHADOW----------------------------- */
+
+.box-shadow {
+    color: navy;
+	/* box-shadow: mov-x mov-y blur-radius spread-blur color inset/outset; */
+    box-shadow: 1rem 1rem 1rem 1rem;
+    box-shadow: -1rem -1rem 1rem 1rem;
+    box-shadow: 1rem 1rem 1rem 1rem #0005;
+    box-shadow: 1rem 1rem 1rem 1rem #f00 inset;
+    box-shadow: 1rem 1rem 2rem 0.5rem #0007;
 }
