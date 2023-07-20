@@ -47,8 +47,23 @@ html {
     
     /* Sombras Múltiples de Caja */
     box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #f00 inset, -.5rem -.5rem 0.5rem 2rem hotpink;
-
+    
     /* Sombras Múltiples de Texto */
     text-shadow: -1rem -1rem 0.5rem navy, 1rem 1rem .5rem greenyellow;
 }
 
+
+/** -------------------------DROP SHADOW-------------------------- */
+
+.drop-shadow {
+    width: 600px;
+    height: auto;
+}
+
+.drop-shadow img {
+    max-width: 100%;
+    height: auto;
+    /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+    box-shadow: 1rem 1rem 1rem 1rem #f00;
+    filter: drop-shadow(1rem 1rem 1rem orangered);
+}
