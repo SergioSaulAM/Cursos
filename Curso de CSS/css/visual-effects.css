@@ -95,3 +95,83 @@ html {
     background-image: linear-gradient(to bottom right, red, green, blue);
     background-image: linear-gradient(90deg, green 33%, white 34% 67%, red 68%);
 }
+
+
+/** ------------------------- DEGRADADOS RADIALES -------------------------- */
+
+.radial-gradient {
+    background-image: radial-gradient(cyan, magenta, yellow);
+    background-image: radial-gradient(circle 4rem, cyan, magenta, yellow);
+    background-image: radial-gradient(circle 4rem, cyan 30%, magenta 80%, yellow);
+    background-image: radial-gradient(
+    circle 100px, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at top, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at bottom, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at left, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at right, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at center, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at top left, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at top right, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at bottom left, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px at bottom right, 
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px,
+    cyan 30%, 
+    magenta 60%, 
+    yellow 90%
+    );
+    background-image: radial-gradient(
+    circle 100px,
+    red 50%,
+    white 50%
+    );
+}
