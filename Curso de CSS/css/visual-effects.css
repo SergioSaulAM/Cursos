@@ -175,3 +175,38 @@ html {
     white 50%
     );
 }
+
+/** ------------------------- DEGRADADOS CÓNICOS -------------------------- */
+.conic-gradient {
+    background-image: conic-gradient(red, green);
+    background-image: conic-gradient(red, green, blue);
+    background-image: conic-gradient(red 0% 50%, green 60%, blue 80%);
+    background-image: conic-gradient(
+    red 0deg 90deg, 
+    green 120deg 240deg, 
+    blue 270deg
+    );
+    background-image: conic-gradient(
+    red 0deg 90deg, 
+    green 120deg 270deg, 
+    blue 271deg
+    );
+    background-image: conic-gradient(
+    from 90deg,
+    red 0deg 90deg, 
+    green 120deg 240deg, 
+    blue 270deg
+    );
+    background-image: conic-gradient(
+    from 180deg,
+    red 0deg 90deg, 
+    green 120deg 240deg, 
+    blue 270deg
+    );
+    background-image: conic-gradient(
+    from 90deg,
+    red 0deg 120deg,
+    white 120deg 240deg,
+    blue 240deg
+    );
+}
