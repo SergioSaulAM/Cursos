@@ -211,6 +211,8 @@ html {
     );
 }
 
+/** ------------------------- PATRONES CON DEGRADADOS -------------------------- */
+
 .repeat-gradient-linear {
     background-image: repeating-linear-gradient(
     red 0 5px,
@@ -247,4 +249,21 @@ html {
         yellow 8% 16%,
         black 16% 24%
     );
+}
+
+
+/** ------------------------- GRÁFICAS CON DEGRADADOS -------------------------- */
+
+.chart-gradient {
+    background-image: conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
+    border-radius: 50%;
+}
+
+.donut-gradient {
+    background-image: 
+    radial-gradient(white 40%, black 41%, transparent 43%),
+    conic-gradient(
+        cyan 0 50%, magenta 50% 80%, yellow 80%
+    );
+    border-radius: 50%;
 }
