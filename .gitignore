@@ -1,2 +1,4 @@
 .vscode
 exercice.*
+venv/
+.idea/
