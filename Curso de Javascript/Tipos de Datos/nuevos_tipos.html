@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Nuevos Tipos de Datos en JavaScript</h1>
-    
+
     <script>
         // ===================== SYMBOLS =======================
         /* 
@@ -44,7 +46,7 @@
             console.log(`${propiedad}: ${persona[propiedad]}`);
         }
         */
-        
+
         // ===================== SETS =======================
         /* 
         const set = new Set([1,2,3,3,true,false,false,{},{},"hola","HOLA"]);
@@ -89,8 +91,8 @@
         set2.clear();
         console.log(set2);
         */
-        
-        
+
+
         // ===================== MAPS =======================
         /* 
         let mapa = new Map();
@@ -128,7 +130,7 @@
         console.log(valoresMapa2);
          */
 
-        
+
         // ===================== WEAKSETS & WEAKMAPS =======================
 
         // ===================== WEAKSETS =======================
@@ -165,7 +167,7 @@
          */
 
         // ===================== WEAKMAP =======================
-        
+
         /* const wm = new WeakMap([
             ["Nombre", "Pumba"],
             ["Edad", 1],            ❌❌
@@ -206,87 +208,87 @@
         }, 500);
          */
 
-        
+
         // ===================== ITERABLES & ITERATORS =======================
-/*         
-        //const iterable = [1,2,3,4,5]
-        //const iterable = "Hola Mundo";
-        //const iterable = new Set([1,2,3,3,5,3,4,5,6]);
-        const iterable = new Map([["Nombre", "Sergio"], ["Edad", 21]]);
-
-        // 👇 Accedemos al iterador de nuestra variable iterable (Array llamado "iterable"); 👇
-        const iterador = iterable[Symbol.iterator]();
+        /*         
+                //const iterable = [1,2,3,4,5]
+                //const iterable = "Hola Mundo";
+                //const iterable = new Set([1,2,3,3,5,3,4,5,6]);
+                const iterable = new Map([["Nombre", "Sergio"], ["Edad", 21]]);
         
-        console.log(iterable);
-        console.log(iterador);
-
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-
-        let next = iterador.next();
-
-        while (!(next.done)) {
-            console.log(next.value);
-            next = iterador.next();
-        }
-
- */
+                // 👇 Accedemos al iterador de nuestra variable iterable (Array llamado "iterable"); 👇
+                const iterador = iterable[Symbol.iterator]();
+                
+                console.log(iterable);
+                console.log(iterador);
         
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+        
+                let next = iterador.next();
+        
+                while (!(next.done)) {
+                    console.log(next.value);
+                    next = iterador.next();
+                }
+        
+         */
+
         // ===================== GENERATORS =======================
-/* 
-        function* iterable () {
-            yield "hola";
-            console.log("Hola Consola");
-            yield "hola 2";
-            console.log("Seguimos con más instrucciones de nuestro código");
-            yield "hola 3";
-            yield "hola 4";
-        }
-
-        let iterador = iterable();
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-        //console.log(iterador.next());
-
-        for (const y of iterador) {
-            console.log(y);
-        }
-
-        const arr = [...iterable()];
-        console.log(arr);
-
-        function cuadrado(value) {
-            setTimeout(() => {
-                console.log({
-                    value,
-                    resultado: value * value
-                });
-            }, Math.random() * 1000);
-        }
-
-        function* generador () {
-            console.log("Inicia Generator");
-            yield cuadrado(0);
-            yield cuadrado(1);
-            yield cuadrado(2);
-            yield cuadrado(3);
-            yield cuadrado(4);
-            yield cuadrado(5);
-            console.log("Termina Generator");
-        }
-
-        let gen = generador();
-
-        for (const y of gen) {
-            console.log(y);
-        }
- */
+        /* 
+                function* iterable () {
+                    yield "hola";
+                    console.log("Hola Consola");
+                    yield "hola 2";
+                    console.log("Seguimos con más instrucciones de nuestro código");
+                    yield "hola 3";
+                    yield "hola 4";
+                }
+        
+                let iterador = iterable();
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+                //console.log(iterador.next());
+        
+                for (const y of iterador) {
+                    console.log(y);
+                }
+        
+                const arr = [...iterable()];
+                console.log(arr);
+        
+                function cuadrado(value) {
+                    setTimeout(() => {
+                        console.log({
+                            value,
+                            resultado: value * value
+                        });
+                    }, Math.random() * 1000);
+                }
+        
+                function* generador () {
+                    console.log("Inicia Generator");
+                    yield cuadrado(0);
+                    yield cuadrado(1);
+                    yield cuadrado(2);
+                    yield cuadrado(3);
+                    yield cuadrado(4);
+                    yield cuadrado(5);
+                    console.log("Termina Generator");
+                }
+        
+                let gen = generador();
+        
+                for (const y of gen) {
+                    console.log(y);
+                }
+         */
 
         // ===================== PROXIES =======================
         /* 
@@ -330,7 +332,7 @@
 
         // ===================== PROPIEDADES DINÁMICAS DE LOS OBJETOS =======================
 
-        let aleatorio = Math.round(Math.random()*100 + 5);
+        let aleatorio = Math.round(Math.random() * 100 + 5);
 
         const objUsuarios = {
             propiedad: "Valor",
@@ -347,4 +349,5 @@
 
     </script>
 </body>
+
 </html>

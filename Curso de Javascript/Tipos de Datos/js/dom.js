@@ -11,7 +11,7 @@ hablar(texto); */
 
 
 // ========================= DOM: INTRODUCCIÓN ===========================
-/* 
+/*
 console.log("******************** ELEMENTOS DEL DOCUMENTO ********************");
 console.log(window.document);
 console.log(document);
@@ -34,7 +34,7 @@ document.write("<h2>Hola Mundo desde el DOM</h2>");
 
 // ========================= DOM: NODOS, ELEMENTOS Y SELECTORES ===========================
 //Nodos: https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-/* 
+/*
 // MÉTODOS CASI NO UTILIZABLES
 console.log(document.getElementsByTagName("li"));
 console.log(document.getElementsByClassName("card")); //No es necesario poner el punto
@@ -61,7 +61,7 @@ console.log(document.querySelectorAll("#menu li")[3]);
 
 
 // ========================= DOM: ATRIBUTOS Y DATA-ATTRIBUTES ===========================
-/* 
+/*
 console.log(document.documentElement.lang);
 console.log(document.documentElement.getAttribute("lang"));
 console.log(document.querySelector(".link-dom").href);
@@ -93,7 +93,7 @@ console.log($linkDOM.hasAttribute("data-id"));
 
 
 // ========================= DOM: ESTILOS Y VARIABLES CSS ===========================
-/* 
+/*
 const $linkDOM = document.querySelector(".link-dom");
 console.log($linkDOM.style);
 console.log($linkDOM.style.backgroundColor);
@@ -129,7 +129,7 @@ $body.style.setProperty("background-color", varDarkColor);
 
 
 // ========================= DOM: CLASES CSS ===========================
-/* 
+/*
 $card = document.querySelector(".card");
 console.log($card);
 console.log($card.className);
@@ -151,7 +151,7 @@ $card.classList.add("opacity-80", "sepia");
 */
 
 // ========================= DOM: TEXTO & HTML ===========================
-/* 
+/*
 const $whatIsDOM = document.getElementById("que-es");
 
 let text = `
@@ -175,7 +175,7 @@ $whatIsDOM.outerHTML = text;
 
 // ========================= DOM: TRAVERSING: RECORRIENDO EL DOM ===========================
 
-/* 
+/*
 const $cards = document.querySelector(".cards");
 
 console.log($cards);
@@ -201,7 +201,7 @@ console.log($cards.children[3].closest("section"));
 
 // ========================= DOM: CREANDO ELEMENTOS Y FRAGMENTOS ===========================
 
-const $figure = document.createElement("figure"),
+/* const $figure = document.createElement("figure"),
 $img = document.createElement("img"),
 $figcaption = document.createElement("figcaption"),
 $figcaptionText = document.createTextNode("Animals"),
@@ -235,7 +235,7 @@ document.body.appendChild($ul);
 estaciones.forEach(el => {
     const $li = document.createElement("li");
     $li.textContent = el;
-    $ul.appendChild($li); 
+    $ul.appendChild($li);
 });
 
 
@@ -276,5 +276,86 @@ meses.forEach(e => {
 });
 
 document.write("<h3>Meses del Año</h3>");
+$ul3.appendChild($fragment);
+document.body.appendChild($ul3);
+ */
+
+
+// ========================= DOM: CREANDO ELEMENTOS Y FRAGMENTOS ===========================
+
+const $figure = document.createElement("figure"),
+    $img = document.createElement("img"),
+    $figcaption = document.createElement("figcaption"),
+    $figcaptionText = document.createTextNode("Dog"),
+    $cards = document.querySelector(".cards"),
+    $figure2 = document.createElement("figure");
+
+$img.setAttribute("src", "https://loremflickr.com/200/200/dog");
+$img.setAttribute("alt", "Dog");
+$figure.classList.add("card");
+
+$figcaption.appendChild($figcaptionText);
+$figure.appendChild($img);
+$figure.appendChild($figcaption);
+$cards.appendChild($figure);
+
+$figure2.innerHTML = `
+    <img src="https://loremflickr.com/200/200/wolf" alt="Wolf"/>
+    <figcaption>Wolf</figcaption>
+`;
+
+$figure2.classList.add("card");
+$cards.appendChild($figure2);
+
+
+const estaciones = ["Primavera", "Verano", "Otoño", "Invierno"],
+    $ul = document.createElement("ul");
+
+document.write("<h3>Estaciones del año</h3>");
+document.body.appendChild($ul);
+
+estaciones.forEach(el => {
+    const $li = document.createElement("li");
+    $li.textContent = el;
+    $ul.appendChild($li);
+})
+
+const continentes = ["África", "América", "Asia", "Europa", "Oceanía"],
+    $ul2 = document.createElement("ul");
+
+document.write("<h3>Continentes del Mundo</h3>");
+document.body.appendChild($ul2);
+$ul2.innerHTML = "";
+
+continentes.forEach(el => {
+    $ul2.innerHTML += `<li>${el}</li>`;
+})
+
+
+// Fragmentos
+const meses = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre"
+],
+    $ul3 = document.createElement("ul"),
+    $fragment = document.createDocumentFragment();
+
+meses.forEach(el => {
+    const $li = document.createElement("li");
+    $li.textContent = el;
+    $fragment.appendChild($li);
+});
+
+document.write("<h3>Meses del año</h3>");
 $ul3.appendChild($fragment);
 document.body.appendChild($ul3);
