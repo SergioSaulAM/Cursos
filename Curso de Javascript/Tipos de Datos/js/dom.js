@@ -281,81 +281,29 @@ document.body.appendChild($ul3);
  */
 
 
-// ========================= DOM: CREANDO ELEMENTOS Y FRAGMENTOS ===========================
+// ========================= DOM: TEMPLATES HTML ===========================
 
-const $figure = document.createElement("figure"),
-    $img = document.createElement("img"),
-    $figcaption = document.createElement("figcaption"),
-    $figcaptionText = document.createTextNode("Dog"),
-    $cards = document.querySelector(".cards"),
-    $figure2 = document.createElement("figure");
+const $cards = document.querySelector(".cards"),
+    $template = document.getElementById("template-card").content,
+    $fragment = document.createDocumentFragment(),
+    cardContent = [
+        {
+            title: "Tecnología",
+            img: "https://picsum.photos/id/36/200/200"
+        },
+        {
+            title: "Música",
+            img: "https://picsum.photos/id/39/200/200"
+        }
+    ]
 
-$img.setAttribute("src", "https://loremflickr.com/200/200/dog");
-$img.setAttribute("alt", "Dog");
-$figure.classList.add("card");
+cardContent.forEach(el => {
+    $template.querySelector("img").setAttribute("src", el.img);
+    $template.querySelector("img").setAttribute("alt", el.title);
+    $template.querySelector("figcaption").textContent = el.title;
 
-$figcaption.appendChild($figcaptionText);
-$figure.appendChild($img);
-$figure.appendChild($figcaption);
-$cards.appendChild($figure);
-
-$figure2.innerHTML = `
-    <img src="https://loremflickr.com/200/200/wolf" alt="Wolf"/>
-    <figcaption>Wolf</figcaption>
-`;
-
-$figure2.classList.add("card");
-$cards.appendChild($figure2);
-
-
-const estaciones = ["Primavera", "Verano", "Otoño", "Invierno"],
-    $ul = document.createElement("ul");
-
-document.write("<h3>Estaciones del año</h3>");
-document.body.appendChild($ul);
-
-estaciones.forEach(el => {
-    const $li = document.createElement("li");
-    $li.textContent = el;
-    $ul.appendChild($li);
+    let $clone = document.importNode($template, true); // 👈🏻 Código para clonar
+    $fragment.appendChild($clone);
 })
 
-const continentes = ["África", "América", "Asia", "Europa", "Oceanía"],
-    $ul2 = document.createElement("ul");
-
-document.write("<h3>Continentes del Mundo</h3>");
-document.body.appendChild($ul2);
-$ul2.innerHTML = "";
-
-continentes.forEach(el => {
-    $ul2.innerHTML += `<li>${el}</li>`;
-})
-
-
-// Fragmentos
-const meses = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre"
-],
-    $ul3 = document.createElement("ul"),
-    $fragment = document.createDocumentFragment();
-
-meses.forEach(el => {
-    const $li = document.createElement("li");
-    $li.textContent = el;
-    $fragment.appendChild($li);
-});
-
-document.write("<h3>Meses del año</h3>");
-$ul3.appendChild($fragment);
-document.body.appendChild($ul3);
+$cards.appendChild($fragment);
