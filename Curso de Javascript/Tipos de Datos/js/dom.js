@@ -311,7 +311,7 @@ $cards.appendChild($fragment);
 
 
 // ========================= DOM: MODIFICANDO ELEMENTOS (OLD STYLE) ===========================
-
+/*
 const $cards = document.querySelector(".cards"),
     $newCard = document.createElement("figure"),
     $cloneCards = $cards.cloneNode(true);
@@ -326,3 +326,37 @@ $newCard.classList.add("card");
 // $cards.insertBefore($newCard, $cards.firstElementChild);
 // $cards.removeChild($cards.lastElementChild);
 document.body.appendChild($cloneCards);
+*/
+
+
+// ========================= DOM: MODIFICANDO ELEMENTOS (COOL STYLE) ===========================
+
+/* 
+    .insertAdjacent...
+        .insertAdjacentElement(position, el)
+        .insertAdjacentHTML(position, html)
+        .insertAdjacentText(position, text)
+    Posiciones:
+        beforebegin (hermano anterior)
+        afterbegin (primer hijo)
+        beforeend (ultimo hijo)
+        afterend (hermano siguiente)
+
+*/
+
+const $cards = document.querySelector(".cards"),
+    $newCard = document.createElement("figure");
+
+let $contentCard = `
+    <img src="https://picsum.photos/200/200" alt="Lorem Picsum">
+    <figcaption></figcaption>
+`;
+
+$newCard.classList.add("card");
+$newCard.insertAdjacentHTML("afterbegin", $contentCard);
+$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Lorem Picsum");
+// $cards.insertAdjacentElement("beforeend", $newCard);
+// $cards.before($newCard);
+// $cards.append($newCard);
+$cards.after($newCard);
+
