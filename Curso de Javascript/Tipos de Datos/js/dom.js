@@ -331,7 +331,7 @@ document.body.appendChild($cloneCards);
 
 // ========================= DOM: MODIFICANDO ELEMENTOS (COOL STYLE) ===========================
 
-/* 
+/*
     .insertAdjacent...
         .insertAdjacentElement(position, el)
         .insertAdjacentHTML(position, html)
@@ -343,7 +343,7 @@ document.body.appendChild($cloneCards);
         afterend (hermano siguiente)
 
 */
-
+/*
 const $cards = document.querySelector(".cards"),
     $newCard = document.createElement("figure");
 
@@ -359,4 +359,35 @@ $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Lorem Pic
 // $cards.before($newCard);
 // $cards.append($newCard);
 $cards.after($newCard);
+ */
+
+
+// ========================= DOM: MANEJADORES DE EVENTOS ===========================
+
+const $eventoSemantico = document.getElementById('evento-semantico'),
+    $eventoMultiple = document.getElementById('evento-multiple');
+
+function holaMundo() {
+    alert("Hola Mundo");
+    console.log(event);
+}
+
+// 👇🏻 FUNCIÓN COMO EVENTO SEMÁNTICO 👇🏻
+$eventoSemantico.onclick = holaMundo;
+
+
+$eventoSemantico.onclick = function (e) {
+    alert("Hola Mudno Manejador de Eventos Semántico");
+    console.log(e);
+    console.log(event);
+}
+
+// 👇🏻 FUNCIÓN COMO EVENTO MÚLTIPLE 👇🏻
+$eventoMultiple.addEventListener("click", holaMundo);
+$eventoMultiple.addEventListener("click", (e) => {
+    alert("Hola Mundo Manejador de Eventos Múltiples");
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+});
 
