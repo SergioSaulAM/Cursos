@@ -394,9 +394,9 @@ $eventoMultiple.addEventListener("click", (e) => {
 
 
 // ========================= DOM: EVENTOS CON PARÁMETROS Y REMOVER EVENTOS ===========================
-
+/*
 const $eventoMultiple = document.getElementById('evento-multiple'),
-    $eventoRemover = document.getElementById('evento-remover');
+$eventoRemover = document.getElementById('evento-remover');
 
 function saludar(nombre = "Desconocid@") {
     alert(`Hola ${nombre}`);
@@ -414,5 +414,26 @@ const removerDobleClick = (e) => {
 }
 
 $eventoRemover.addEventListener('dblclick', removerDobleClick);
+ */
 
+
+// ========================= DOM: EVENTOS CON PARÁMETROS Y REMOVER EVENTOS ===========================
+
+const $divsElementos = document.querySelectorAll('.eventos-flujo div');
+
+function flujoEventos(e) {
+    console.log(`Hola, te saluda ${this.className}, el click lo originó ${e.target.className}`);
+}
+
+console.log($divsElementos);
+
+$divsElementos.forEach(div => {
+    // div.addEventListener("click", flujoEventos);
+    // div.addEventListener("click", flujoEventos, false);
+    // div.addEventListener("click", flujoEventos, true);
+    div.addEventListener('click', flujoEventos, {
+        capture: false,
+        once: true
+    })
+});
 
