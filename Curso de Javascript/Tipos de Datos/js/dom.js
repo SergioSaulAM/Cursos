@@ -363,7 +363,7 @@ $cards.after($newCard);
 
 
 // ========================= DOM: MANEJADORES DE EVENTOS ===========================
-
+/*
 const $eventoSemantico = document.getElementById('evento-semantico'),
     $eventoMultiple = document.getElementById('evento-multiple');
 
@@ -390,4 +390,29 @@ $eventoMultiple.addEventListener("click", (e) => {
     console.log(e.type);
     console.log(e.target);
 });
+ */
+
+
+// ========================= DOM: EVENTOS CON PARÁMETROS Y REMOVER EVENTOS ===========================
+
+const $eventoMultiple = document.getElementById('evento-multiple'),
+    $eventoRemover = document.getElementById('evento-remover');
+
+function saludar(nombre = "Desconocid@") {
+    alert(`Hola ${nombre}`);
+}
+
+$eventoMultiple.addEventListener("click", (e) => {
+    saludar('Saul');
+});
+
+const removerDobleClick = (e) => {
+    alert(`Removiendo el evento de tipo ${e.type}`);
+    console.log(e);
+    $eventoRemover.removeEventListener("dblclick", removerDobleClick); // 👈🏻 Aquí se deshabilita la función que maneja el evento. SIN PERÉNTESIS
+    $eventoRemover.disabled = true;
+}
+
+$eventoRemover.addEventListener('dblclick', removerDobleClick);
+
 
