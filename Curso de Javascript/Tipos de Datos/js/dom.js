@@ -440,7 +440,7 @@ $divsElementos.forEach(div => {
 
 // ========================= DOM: STOPPROPAGATION & PREVENTDEFAULT ===========================
 
-const $divsElementos = document.querySelectorAll('.eventos-flujo div'),
+/* const $divsElementos = document.querySelectorAll('.eventos-flujo div'),
     $linkEventos = document.querySelector('.eventos-flujo a');
 
 function flujoEventos(e) {
@@ -458,5 +458,27 @@ $linkEventos.addEventListener('click', (e) => {
     alert("Hola");
     e.preventDefault();
     e.stopPropagation();
+}) */
+
+
+
+// ========================= DOM: DELEGACIÓN DE EVENTOS ===========================
+
+const $divsElementos = document.querySelectorAll('.eventos-flujo div');
+
+function flujoEventos(e) {
+    console.log(`Hola, te saluda ${this}, el click lo originó ${e.target.className}`); // 👈🏻 el this hace referencia al elemento document
+}
+
+document.addEventListener('click', (e) => {
+    console.log('Click en ', e.target);
+    if (e.target.matches('.eventos-flujo div')) {
+        flujoEventos(e);
+    }
+    if (e.target.matches('.eventos-flujo a')) {
+        alert("Hola");
+        e.preventDefault();
+    }
 })
+
 
