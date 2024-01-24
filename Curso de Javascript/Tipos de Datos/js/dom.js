@@ -464,6 +464,7 @@ $linkEventos.addEventListener('click', (e) => {
 
 // ========================= DOM: DELEGACIÓN DE EVENTOS ===========================
 
+/*
 const $divsElementos = document.querySelectorAll('.eventos-flujo div');
 
 function flujoEventos(e) {
@@ -480,5 +481,41 @@ document.addEventListener('click', (e) => {
         e.preventDefault();
     }
 })
+*/
 
+
+
+// ========================= BOM: PROPIEDADES Y EVENTOS ===========================
+
+const $webApisHeadint = document.getElementById('web-apis-heading');
+
+window.addEventListener('resize', (e) => {
+    console.clear();
+    console.log("********* EVENTO RESIZE *********");
+    console.log(innerWidth);
+    console.log(innerHeight);
+    console.log(outerWidth);
+    console.log(outerHeight);
+    console.log(e);
+});
+
+window.addEventListener('scroll', e => {
+    console.log("********* EVENTO SCROLL *********");
+    console.log(scrollX, scrollY);
+    console.log(e);
+});
+
+window.addEventListener("load", e => {
+    console.log("********* EVENTO LOAD *********");
+    console.log(screenX);
+    console.log(screenY);
+    console.log(e);
+});
+
+document.addEventListener('DOMContentLoaded', (e) => {
+    console.log("********* EVENTO DOMContentLoaded *********");
+    console.log(screenX);
+    console.log(screenY);
+    console.log(e);
+});
 
