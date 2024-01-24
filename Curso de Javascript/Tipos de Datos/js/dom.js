@@ -486,7 +486,7 @@ document.addEventListener('click', (e) => {
 
 
 // ========================= BOM: PROPIEDADES Y EVENTOS ===========================
-
+/*
 const $webApisHeadint = document.getElementById('web-apis-heading');
 
 window.addEventListener('resize', (e) => {
@@ -518,4 +518,33 @@ document.addEventListener('DOMContentLoaded', (e) => {
     console.log(screenY);
     console.log(e);
 });
+ */
+
+
+
+// ========================= BOM: MÉTODOS ===========================
+
+const $btnAbrir = document.getElementById('abrir-ventana'),
+    $btnCerrar = document.getElementById('cerrar-ventana'),
+    $btnImprimir = document.getElementById('imprimir-ventana');
+
+let ventana;
+
+$btnAbrir.addEventListener('click', (e) => {
+    ventana = open('https://jonmircha.com');
+});
+
+$btnCerrar.addEventListener('click', (e) => {
+    ventana.close();
+});
+
+$btnImprimir.addEventListener('click', (e) => {
+    print()
+});
+
+// alert('Hola');
+// prompt('msg');
+// confirm('msg');
+
+
 
