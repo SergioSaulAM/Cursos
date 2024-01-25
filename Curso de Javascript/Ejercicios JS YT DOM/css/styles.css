@@ -71,6 +71,12 @@ img {
     width: 100%;
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    /* De arriba */
+    transform: translate(0, -100%);
+    /* De abajo */
+    transform: translate(0, 100%);
+    /* De derecha */
+    transform: translate(100%, 0);
     /* De izquierda */
     transform: translate(-100%, 0);
 }
