@@ -11,4 +11,8 @@ d.addEventListener('DOMContentLoaded', function (e) {
 
     /* *********** RELOJ *********** */
     digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
+
+
+    /* *********** ALARM *********** */
+    alarm("../assets/ringtone.mp3", "#activar-alarma", "#desactivar-alarma");
 });
