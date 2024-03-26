@@ -1,5 +1,5 @@
 const d = document;
-export default countdown = (id, limitDate, finalMessage) => {
+const countdown = (id, limitDate, finalMessage) => {
     const $countdown = d.getElementById(id),
         countdownDate = new Date(limitDate).getTime();
     let contdownTempo = setInterval(() => {
@@ -16,3 +16,5 @@ export default countdown = (id, limitDate, finalMessage) => {
         }
     }, 1000);
 }
+
+export default countdown;
