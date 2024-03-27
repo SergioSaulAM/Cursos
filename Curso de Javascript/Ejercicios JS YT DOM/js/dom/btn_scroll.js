@@ -10,7 +10,7 @@ const scrollTopButton = (btn) => {
         } else {
             $scrollBtn.classList.add('hidden');
         }
-        console.log(pageYOffset, d.documentElement.scrollTop, scrollY);
+        // console.log(pageYOffset, d.documentElement.scrollTop, scrollY);
     });
 
     d.addEventListener('click', (e) => {

@@ -26,9 +26,6 @@ d.addEventListener('DOMContentLoaded', function (e) {
 
     /* *********** SCROLL TOP BUTTON *********** */
     scrollTopButton('.scroll-top-button');
-
-    /* *********** DARK MODE *********** */
-    darkTheme('.dark-theme-btn', 'dark-mode');
 });
 
 d.addEventListener('keydown', (e) => {
@@ -36,3 +33,6 @@ d.addEventListener('keydown', (e) => {
     shortcut(e);
     moveBall(e, '.ball', '.stage');
 });
+
+/* *********** DARK MODE *********** */
+darkTheme('.dark-theme-btn', 'dark-mode');
